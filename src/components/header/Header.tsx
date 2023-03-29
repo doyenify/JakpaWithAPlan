@@ -9,7 +9,7 @@ const Header = () => {
     <div>
      <Navbar  expand="lg" style={{backgroundColor: "#8CACD2"}}>
       <Container fluid>
-        <Navbar.Brand href="#" style={{color:"#044163", fontWeight: "40px"}}>JakpaWithAPlan</Navbar.Brand>
+        <Navbar.Brand className='ms-5' href="#" style={{color:"#ffffff", fontSize:"20px" }}>JakpaWithAPlan</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -18,9 +18,9 @@ const Header = () => {
             navbarScroll
           > 
           </Nav>
-          <div>
-            <Button className='' style={{backgroundColor: "#044163"}}>Make An Enquiry</Button>
-            <Button  className='' style={{backgroundColor: "#044163"}}> Book A Service</Button>
+          <div className='pe-5 header-btn-container'>
+            <Button className='mx-2' style={{backgroundColor: "#044163"}}>Make An Enquiry</Button>
+            <Button  className='mx-2' style={{backgroundColor: "#044163"}}> Book A Service</Button>
           </div>
         </Navbar.Collapse>
       </Container>
