@@ -6,8 +6,8 @@ const AboutUs = () => {
   return (
     <div>
       <div className='container-fluid bg-black' style={{ height: "100vh" }}>
-        <Row className='h-100'>
-          <Col className='d-flex justify-content-center align-items-center'>
+        <Row className='h-100 py-5'>
+          <Col className='d-flex justify-content-center align-items-center pb-5'>
             <div className='content-wrapper text-white px-5'>
               <h2>About Us</h2>
               <div className='aboutus-contents'>
@@ -22,9 +22,9 @@ const AboutUs = () => {
               </div>
             </div>
           </Col>
-          <Col className='d-flex justify-content-center align-items-center'>
-            <div className='aboutusimg_wrapper'>
-              <img src={aboutus_img} alt="About us image" style={{ boxShadow: "15px -15px #044163" }} />
+          <Col className='d-flex justify-content-center align-items-center pb-5'>
+            <div className='aboutusimg_wrapper' style={{ width: "21.8rem"}}>
+              <img src={aboutus_img} alt="About us image" style={{ boxShadow: "15px -15px #044163", width: "100%", height: "auto" }} />
             </div>
           </Col>
         </Row>
