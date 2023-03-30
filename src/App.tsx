@@ -1,7 +1,7 @@
 
 import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
-import Aboutus from './components/aboutus/Aboutus';
+import AboutUs from './components/aboutus/Aboutus';
 import Travel from './components/travel/Travel';
 import Whatweoffer from './components/whatweoffer/Whatweoffer';
 import Testimonial from './components/testimonial/Testimonial';
@@ -12,7 +12,7 @@ function App() {
     <div>
     <Header/>
     <Hero/>
-    <Aboutus/>
+    <AboutUs/>
     <Travel/>
     <Whatweoffer/>
     <Testimonial/>
