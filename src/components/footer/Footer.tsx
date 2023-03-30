@@ -14,11 +14,11 @@ const Footer = () => {
                  nunc proin ultrices neque sagittis”</p>
         </div>
         <div>
-        <a  className="mx-3" style={{color: "#044163", fontSize: "25px", textDecoration: "none"}} ><Facebook className="footer-link" /> </a>
-        <a  className="mx-3" style={{color: "#044163", fontSize: "25px", textDecoration: "none"}}  ><Linkedin className="footer-link" /> </a>
-        <a  className="mx-3" style={{color: "#044163", fontSize: "25px", textDecoration: "none"}}  ><Twitter className="footer-link" /> </a>
-        <a  className="mx-3" style={{color: "#044163", fontSize: "25px", textDecoration: "none"}}  ><Instagram className="footer-link" /> </a>
-        <a  className="mx-3" style={{color: "#044163", fontSize: "25px", textDecoration: "none"}}  ><Youtube className="footer-link" /> </a>
+        <a href='https://twitter.com/home' className="mx-3" style={{color: "#044163", fontSize: "25px", textDecoration: "none"}} ><Facebook className="footer-link" /> </a>
+        <a  href='https://twitter.com/home' className="mx-3" style={{color: "#044163", fontSize: "25px", textDecoration: "none"}}  ><Linkedin className="footer-link" /> </a>
+        <a  href='https://twitter.com/home'className="mx-3" style={{color: "#044163", fontSize: "25px", textDecoration: "none"}}  ><Twitter className="footer-link" /> </a>
+        <a href='https://twitter.com/home' className="mx-3" style={{color: "#044163", fontSize: "25px", textDecoration: "none"}}  ><Instagram className="footer-link" /> </a>
+        <a href='https://twitter.com/home' className="mx-3" style={{color: "#044163", fontSize: "25px", textDecoration: "none"}}  ><Youtube className="footer-link" /> </a>
         </div>
         <br />
         <div className=''>
