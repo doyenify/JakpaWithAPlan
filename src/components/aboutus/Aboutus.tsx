@@ -24,7 +24,7 @@ const AboutUs = () => {
           </Col>
           <Col className='d-flex justify-content-center align-items-center pb-5'>
             <div className='aboutusimg_wrapper' style={{ width: "21.8rem"}}>
-              <img src={aboutus_img} alt="About us image" style={{ boxShadow: "15px -15px #044163", width: "100%", height: "auto" }} />
+              <img src={aboutus_img} alt="About us" style={{ boxShadow: "15px -15px #044163", width: "100%", height: "auto" }} />
             </div>
           </Col>
         </Row>
