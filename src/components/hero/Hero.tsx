@@ -1,11 +1,6 @@
-<<<<<<< HEAD
 import {Button, Card} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import "../../hero/hero.css";
-=======
-
-// import heroimage from './img/heroimage.png';
->>>>>>> 1de0c79dc78977f82095c73c6a08eccdf6afd0fd
 
 const Hero = () => {
   return (
