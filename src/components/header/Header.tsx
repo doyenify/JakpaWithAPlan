@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Display } from 'react-bootstrap-icons';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -9,7 +10,8 @@ const Header = () => {
     <div>
      <Navbar  expand="lg" style={{backgroundColor: "#8CACD2"}}>
       <Container fluid>
-        <Navbar.Brand className='ms-5' href="#" style={{color:"#ffffff", fontSize:"20px" }}>JakpaWithAPlan</Navbar.Brand>
+        <Navbar.Brand className='ms-5' href="#" style={{color:"#ffffff", fontSize:"20px", fontWeight: "bold" }}>JakpaWithAPlan <br /> 
+        <h5 style={{color:"#044163", fontSize:"12px"}}>Powered by Doyenify</h5> </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
