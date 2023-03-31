@@ -1,0 +1,33 @@
+
+.travel-list {
+    padding-top: 1.9em;
+    list-style-image: url(../../img/travel_check_icon.png);
+    
+}
+
+.travel-content-wrapper li {
+    font-size: 1.5rem;
+    padding-bottom: 1.6em;
+    padding-left: 1.5rem;
+    padding-top: 0;
+
+}
+
+.travel-content-wrapper li span {
+    display: block;
+    font-size: 1.12rem;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 640px) {
+    .travel-img-col {
+        height: 100vh;
+        display: none;
+    }
+
+    .travel-content-col {
+        height: 100vh;
+        padding-top: 3rem;
+    }
+
+}
