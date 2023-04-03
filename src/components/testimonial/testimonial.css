@@ -1,0 +1,21 @@
+.testimonial-section {
+    max-width: 800px
+}
+
+.carousel-div {
+    height: 300px;
+    width: 600px;
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+}
+
+.caption h3 {
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
