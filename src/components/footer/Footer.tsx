@@ -65,6 +65,11 @@ const Footer = () => {
               >
                 Book A Service
             </Button>
+            <br />
+            <div className='mt-5' style=
+              {{color: "#044163",fontSize: "12px", fontWeight: "bold"}}> <h5>
+             Powered by Doyenify </h5></div>
+             
         </div>
    </div>
 

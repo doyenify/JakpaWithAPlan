@@ -5,10 +5,10 @@ import aboutus_img from '../../img/aboutus_img.png'
 const AboutUs = () => {
   return (
     <div>
-      <div className='container-fluid bg-black' style={{ height: "100vh" }}>
+      <div id='aboutuspage' className='container-fluid bg-black' style={{ height: "100vh" }}>
         <Row className='h-100 py-5'>
           <Col className='col-12 col-sm-6 d-flex justify-content-center align-items-center pb-5'>
-            <div className='content-wrapper text-white px-5'>
+            <div  className='content-wrapper text-white px-5'>
               <h2>About Us</h2>
               <div className='aboutus-contents'>
                 Lorem ipsum dolor sit amet consectetur. At id tortor odio arcu 

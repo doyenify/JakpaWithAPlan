@@ -12,7 +12,7 @@ const Hero = () => {
         <Card.Title style={{ fontSize:"48px" }}>Never Let Your Memory Be <br />
         Greater Than Your Dreams</Card.Title>
         <div className='mt-3'>
-            <Button className='px-5' href='#' style={{backgroundColor: "#044163"}}>About Us</Button>
+            <Button  className='aboutuspage px-5 ' href='#aboutuspage' style={{backgroundColor: "#044163"}}>About Us</Button>
             <Button  className='mx-2 px-5' href='#' style={{backgroundColor: "transparent"}}> Book A Service</Button>
           </div>
       </Card.ImgOverlay>
