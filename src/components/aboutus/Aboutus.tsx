@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Row, Col } from 'react-bootstrap'
 import aboutus_img from '../../img/aboutus_img.png'
+import "./aboutus.css";
 
 const AboutUs = () => {
   return (

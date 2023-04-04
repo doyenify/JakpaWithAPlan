@@ -19,7 +19,13 @@
     font-weight: 300;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 760px) {
+    .travel-section-wrapper {
+        height: 100vh;
+        padding-top: 250px;
+        padding-bottom: 650px;
+    }
+    
     .travel-img-col {
         height: 100vh;
         display: none;
