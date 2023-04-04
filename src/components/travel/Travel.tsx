@@ -18,31 +18,31 @@ const Travel = () => {
               <Row>
                 <Col className='col-sm-4' style={{ position: "relative" }}>
                   <img src={travel_img_1} alt="travel img"></img>
-                  <h5 style={{ fontSize: "1.25rem", margin: "0", position: "absolute", bottom: "16px", right: "5%" }}>Competence</h5>
+                  <h5 style={{ fontSize: "1.25rem", margin: "0", position: "absolute", bottom: "16px", right: "5%", background: "rgba(0,0,0,0.3)", padding: "5px", borderRadius: "5px" }}>Competence</h5>
                 </Col>
               </Row>
               <Row className='my-2'>
                 <Col className='col-sm-4' style={{ position: "relative" }}>
                     <img src={travel_img_2} alt="travel img"></img>
-                    <h5 style={{ fontSize: "1.25rem", margin: "0", position: "absolute", bottom: "16px", right: "5%" }}>Earn More</h5>
+                    <h5 style={{ fontSize: "1.25rem", margin: "0", position: "absolute", bottom: "16px", right: "5%", background: "rgba(0,0,0,0.3)", padding: "5px", borderRadius: "5px" }}>Earn More</h5>
                 </Col>
                 <Col className='col-sm-4' style={{ position: "relative" }}>
                     <img src={travel_img_3} alt="travel img"></img>
-                    <h5 style={{ fontSize: "1.25rem", position: "absolute", bottom: "16px", right: "5%" }}>Skill</h5>
+                    <h5 style={{ fontSize: "1.25rem", position: "absolute", bottom: "16px", right: "5%", background: "rgba(0,0,0,0.3)", padding: "5px", borderRadius: "5px" }}>Skill</h5>
                 </Col>
               </Row>
               <Row>
               <Col className='col-sm-4' style={{ position: "relative" }}>
                     <img src={travel_img_4} alt="travel img"></img>
-                    <h5 style={{ fontSize: "1.25rem", position: "absolute", bottom: "16px", right: "5%" }}>Competence</h5>
+                    <h5 style={{ fontSize: "1.25rem", position: "absolute", bottom: "16px", right: "5%", background: "rgba(0,0,0,0.3)", padding: "5px", borderRadius: "5px" }}>More Income</h5>
                 </Col>
                 <Col className='col-sm-4' style={{ position: "relative" }}>
                     <img src={travel_img_5} alt="travel img"></img>
-                    <h5 style={{ fontSize: "1.25rem", position: "absolute", bottom: "16px", right: "5%" }}>Competence</h5>
+                    <h5 style={{ fontSize: "1.25rem", position: "absolute", bottom: "16px", right: "5%", background: "rgba(0,0,0,0.3)", padding: "5px", borderRadius: "5px"}}>Career</h5>
                 </Col>
                 <Col className='col-sm-4' style={{ position: "relative" }}>
                     <img src={travel_img_6} alt="travel img"></img>
-                    <h5 style={{ fontSize: "1.25rem", position: "absolute", bottom: "16px", right: "5%" }}>Competence</h5>
+                    <h5 style={{ fontSize: "1.25rem", position: "absolute", bottom: "16px", right: "5%", background: "rgba(0,0,0,0.3)", padding: "5px", borderRadius: "5px" }}>Dream Job</h5>
                 </Col>
               </Row>
             </div>
@@ -51,11 +51,36 @@ const Travel = () => {
             <div className='travel-content-wrapper'>
               <h2>Travel With A Plan</h2>
               <ul className='travel-list'>
-                <li>Build a skill <span>Lorem ipsum dolor sit amet consectetur. </span></li>
-                <li>Build Competence <span>Lorem ipsum dolor sit amet consectetur.  </span></li>
-                <li>Earn More <span>Lorem ipsum dolor sit amet consectetur.  </span></li>
-                <li>Build A Career <span>Lorem ipsum dolor sit amet consectetur.  </span></li>
-                <li>Dream Job <span>Lorem ipsum dolor sit amet consectetur.  </span></li>
+                <li>Build a skill 
+                  <span>Building a skill is like building a muscle - 
+                      the more you work on it, the stronger it becomes.
+                  </span>
+                </li>
+                <li>Build Competence 
+                  <span>
+                    Building competence is a journey, not a destination. 
+                    It requires dedication, persistence, and a commitment to continuous learning.
+                  </span>
+                </li>
+                <li>Increase Income
+                  <span>
+                    We assist individuals by ensuring improvement in 
+                    ability to explore various ways of increasing their income.
+                  </span>
+                </li>
+                <li>Build A Career 
+                  <span>
+                    Building a successful career requires self-awareness, skill development, 
+                    dedication, hard work, continuous learning, adaptability, and a clear vision 
+                    of one's goals.
+                  </span>
+                </li>
+                <li>Dream Job 
+                  <span>
+                    Your dream job is not just a career, it's a reflection of your passion, 
+                    purpose, and values that brings fulfillment and satisfaction to your life.
+                  </span>
+                </li>
               </ul>
             </div>
           </Col>
