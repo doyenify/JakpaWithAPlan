@@ -1,4 +1,5 @@
 
+
 .travel-list {
     padding-top: 1.9em;
     list-style-image: url(../../img/travel_check_icon.png);
@@ -7,7 +8,7 @@
 
 .travel-content-wrapper li {
     font-size: 1.5rem;
-    padding-bottom: 1.6em;
+    padding-bottom: 1em;
     padding-left: 1.5rem;
     padding-top: 0;
 
@@ -15,11 +16,19 @@
 
 .travel-content-wrapper li span {
     display: block;
-    font-size: 1.12rem;
+    font-size: 1rem;
     font-weight: 300;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 760px) {
+    .travel-section-wrapper {
+        height: 100vh;
+        padding-top: 400px;
+        padding-bottom: 800px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
     .travel-img-col {
         height: 100vh;
         display: none;
