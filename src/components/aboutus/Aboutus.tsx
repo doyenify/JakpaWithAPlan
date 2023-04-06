@@ -31,7 +31,7 @@ const AboutUs = () => {
           </Col>
           <Col className='col-12 col-sm-6 d-flex justify-content-center align-items-center pb-5'>
             <div className='aboutusimg_wrapper' style={{ width: "21.8rem"}}>
-              <img src={aboutus_img} alt="About us" style={{ boxShadow: "15px -15px #044163", width: "100%", height: "auto" }} />
+              <img src={aboutus_img} alt="About us" style={{ boxShadow: "15px -15px #044163", width: "100%", height: "auto", borderRadius: "10px" }} />
             </div>
           </Col>
         </Row>
