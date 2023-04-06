@@ -1,0 +1,31 @@
+.readmore-btn:hover{
+    transform: scale(1.01);
+    box-shadow: 0 10px 20px rgba(4, 0, 10, 0.12), 0 4px 8px rgba(43, 41, 41, 0.06);
+    opacity: 0.8;
+}
+
+.offer-arrow:hover{
+    color: #8CACD2;
+}
+.offer-arrow{
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    animation-name: arrowright;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes arrowright{
+    0% { left: 0;
+
+    }
+    50%{ left: 15px;
+
+    }
+    100%{
+        left:0
+    }
+}

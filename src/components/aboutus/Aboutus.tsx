@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Row, Col } from 'react-bootstrap'
-import aboutus_img from '../../img/aboutus_img.png'
+import { Row, Col, Button } from 'react-bootstrap';
+import aboutus_img from '../../img/aboutus_img.png';
+import './aboutus.css';
 
 const AboutUs = () => {
   return (
@@ -11,15 +12,21 @@ const AboutUs = () => {
             <div  className='content-wrapper text-white px-5'>
               <h2>About Us</h2>
               <div className='aboutus-contents'>
-                Lorem ipsum dolor sit amet consectetur. At id tortor odio arcu 
-                rhoncus a sit enim. Massa sem neque lorem massa bibendum in turpis 
-                viverra. Vel elementum nunc malesuada velit in bibendum aliquet ac sit.
+              JakpaWithAPlan is a leading provider of services for traveling consultancy, CV review,
+               and crash courses with certification. We are dedicated to helping our clients achieve 
+               their goals and reach their full potential, whether they are looking to advance their 
+               career or explore new opportunities around the world.
+               Our team of experienced consultants provides personalized guidance and support
+               to help our clients navigate the complex world of travel, job applications, 
+               and professional development. We understand that every client is unique and has 
+               different needs, which is why we take a customized approach to every project.
                 <br /> <br />
-                Et sit ultricies faucibus sed. Purus adipiscing donec elementum velit. 
-                Sit et ligula venenatis in sem ut egestas ac scelerisque. Sed neque arcu 
-                nunc amet. Gravida sit integer amet id amet magna senectus sit. Turpis erat 
-                diam commodo malesuada.
+                For those looking to travel, we offer expert advice on everything from planning
+                and booking to safety and cultural considerations. We provide the insights and tools they need to
+                have a memorable and stress-free experience while planning and also at arrival to their destination.
               </div>
+              <br />
+              <Button className='aboutuspage-btn' href='#whatweoffer' style={{backgroundColor: "#044163"}}>What We Offer</Button>
             </div>
           </Col>
           <Col className='col-12 col-sm-6 d-flex justify-content-center align-items-center pb-5'>

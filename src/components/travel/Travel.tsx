@@ -11,9 +11,9 @@ import './travel.css';
 const Travel = () => {
   return (
     <div>
-      <div className='container-fluid bg-black text-white travel-section-wrapper' style={{ height: "100vh" }}>
+      <div className='container-fluid bg-black text-white travel-section-wrapper' style={{ height: "" }}>
         <Row className='h-100'>
-          <Col className='travel-img-col'>
+          <Col className='travel-img-col  d-flex justify-content-center align-items-center'>
             <div className='container-fluid travel-img-wrapper'style={{ maxWidth: "560px" }}>
               <Row>
                 <Col className='col-sm-4' style={{ position: "relative" }}>
@@ -49,13 +49,18 @@ const Travel = () => {
           </Col>
           <Col className='d-flex justify-content-center travel-content-col'>
             <div className='travel-content-wrapper'>
-              <h2>Travel With A Plan</h2>
+              <h2>Relocate With A Plan </h2>
               <ul className='travel-list'>
-                <li>Build a skill <span>Lorem ipsum dolor sit amet consectetur. </span></li>
-                <li>Build Competence <span>Lorem ipsum dolor sit amet consectetur.  </span></li>
-                <li>Earn More <span>Lorem ipsum dolor sit amet consectetur.  </span></li>
-                <li>Build A Career <span>Lorem ipsum dolor sit amet consectetur.  </span></li>
-                <li>Dream Job <span>Lorem ipsum dolor sit amet consectetur.  </span></li>
+                <li>Build a skill <span>"Building a skill is like building a muscle - the more you work on it, <br /> 
+                 the stronger it becomes. </span></li>
+                <li>Build Competence <span>"Building competence is a journey, not a destination. It requires 
+                  <br /> dedication, persistence,
+                   and a commitment to continuous learning. </span></li>
+                <li>Increase Income <span>We assist individuals by ensuring improvement in ability to  <br /> explore various ways of increasing their income.  </span></li>
+                <li>Build A Career <span>Building a successful career requires self-awareness, skill development <br /> 
+                ,dedication, hard work, continuous learning, adaptability, and a clear vision of one's goals. </span></li>
+                <li>Dream Job <span>Your dream job is not just a career, it's a reflection of your <br />  passion, purpose,
+                   and values that brings fulfillment and satisfaction to your life." </span></li>
               </ul>
             </div>
           </Col>

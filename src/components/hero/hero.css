@@ -1,3 +1,12 @@
+.hero-about-btn:hover{
+    border-color: aliceblue;
+    background-color: #8CACD2;
+}
+
+.hero-offer-btn:hover{
+    border-color: aliceblue;
+    background-color: #8CACD2;
+}
 
 
 @media screen and (max-width: 640px) {
