@@ -1,16 +1,19 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Makeenquiry from '../makeenquiry/Makeenquiry';
+import Bookaservice from '../bookaservice/Bookaservice';
+import './header.css';
 
 const Header = () => {
   return (
-    <div>
+    <div id='headerpage'>
      <Navbar  expand="lg" style={{backgroundColor: "#8CACD2"}}>
       <Container fluid>
         <Navbar.Brand className='ms-5' href="#" style={{color:"#ffffff", fontSize:"20px", fontWeight: "bold" }}>JakpaWithAPlan <br /> 
-        <h5 style={{color:"#044163", fontSize:"12px"}}>Powered by Doyenify</h5> </Navbar.Brand>
+        <a href="https://doyenify.com/" style={{textDecoration:"none"}} target='#blank' >
+        <h5 style={{color:"#044163", fontSize:"12px"}} className='poweredbydoyenify-header'> Powered by doyenify </h5> </a></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -20,8 +23,10 @@ const Header = () => {
           > 
           </Nav>
           <div className='pe-5 header-btn-container'>
-            <Button className='mx-2' style={{backgroundColor: "#044163"}}>Make An Enquiry</Button>
-            <Button  className='mx-2' style={{backgroundColor: "#044163"}}> Book A Service</Button>
+            <Makeenquiry/>
+            <Bookaservice/>
+            {/* <Button className='mx-2'  style={{backgroundColor: "#044163"}}>Make An Enquiry</Button> */}
+            {/* <Button  className='mx-2' style={{backgroundColor: "#044163"}}> Book A Service</Button> */}
           </div>
         </Navbar.Collapse>
       </Container>

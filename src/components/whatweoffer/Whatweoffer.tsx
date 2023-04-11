@@ -1,10 +1,14 @@
 import {Button, Card, Row, Col} from 'react-bootstrap';
+import Bookaservice from '../bookaservice/Bookaservice';
+import CourseList from '../courselist/CourseList';
+import { ArrowRightShort} from 'react-bootstrap-icons';
+import './whatweoffer.css';
+// import { Link } from 'react-router-dom';
 
 const Whatweoffer = () => {
   return (
-   
-    <div  style={{backgroundColor: "#000000", height:""}}>
-      <div className='text-center mb-5' style={{color: "#ffffff"}}>
+    <div id='whatweoffer' style={{backgroundColor: "#000000", height:""}}>
+      <div  className='text-center mb-5' style={{color: "#ffffff"}}>
          <h2>What We Offer</h2>
       </div>
     <div className='d-flex justify-content-center align-items-center pb-5'>
@@ -15,10 +19,10 @@ const Whatweoffer = () => {
                 <Card.Body>
                   <Card.Title>Consultancy</Card.Title>
                     <Card.Text>
-                      Some quick example text to build on the card title and make up the
-                      bulk of the card's content.
+                    Our traveling consultancy provides comprehensive relocation services to individuals,
+                   including customized planning, visa and immigration...
                    </Card.Text>
-                    <Button href='#constultancypage'  style={{backgroundColor: "#044163"}}>Read More</Button>
+                    <Button className='readmore-btn' href='#constultancypage'  style={{backgroundColor: "#044163"}}>Read More</Button>
                 </Card.Body>
             </Card>
         </Col>
@@ -28,10 +32,10 @@ const Whatweoffer = () => {
                 <Card.Body>
                   <Card.Title>Crash Course</Card.Title>
                     <Card.Text>
-                      Some quick example text to build on the card title and make up the
-                      bulk of the card's content.
+                    Our crash courses provide an accelerated and focused learning experience for individuals 
+                   seeking to quickly gain new skills or...
                    </Card.Text>
-                    <Button href='#coursepage' style={{backgroundColor: "#044163"}}>Read More</Button>
+                    <Button className='readmore-btn' href='#coursepage' style={{backgroundColor: "#044163"}}>Read More</Button>
                 </Card.Body>
             </Card>
         </Col>
@@ -41,10 +45,10 @@ const Whatweoffer = () => {
                 <Card.Body>
                   <Card.Title>CV Review</Card.Title>
                     <Card.Text>
-                      Some quick example text to build on the card title and make up the
-                      bulk of the card's content.
+                    Our CV review service offers a comprehensive and personalized evaluation of an individual's resume, 
+                    highlighting...
                    </Card.Text>
-                    <Button href='#cvpage' style={{backgroundColor: "#044163"}}>Read More</Button>
+                    <Button className='readmore-btn' href='#cvpage' style={{backgroundColor: "#044163"}}>Read More</Button>
                 </Card.Body>
             </Card>
         </Col>
@@ -54,14 +58,19 @@ const Whatweoffer = () => {
                 <Card.Body>
                   <Card.Title>Certificate</Card.Title>
                     <Card.Text>
-                      Some quick example text to build on the card title and make up the
-                      bulk of the card's content.
+                    We offer certification in all our Courses, these certificates indicate to your 
+                   potential employers or clients that the person...
                    </Card.Text>
-                    <Button href='#certificatepage' style={{backgroundColor: "#044163"}}>Read More</Button>
+                    <Button className='readmore-btn' href='#certificatepage' style={{backgroundColor: "#044163"}}>Read More</Button>
                 </Card.Body>
             </Card>
         </Col>
       </Row>
+      </div>
+       <div>
+          <a className='text-center' style={{textDecoration: "none", color: "#ffffff"}} 
+           href="#whatweoffer"> <h5> Book A Service <ArrowRightShort className="offer-arrow"/></h5>
+          </a>
       </div>
       <div className='mt-5'>
       <Row id='constultancypage' className='h-100 py-5'>
@@ -69,17 +78,15 @@ const Whatweoffer = () => {
             <div className='content-wrapper text-white px-5'>
               <h2> Consultancy</h2>
               <div className=''>
-                Lorem ipsum dolor sit amet consectetur. At id tortor odio arcu 
-                rhoncus a sit enim. Massa sem neque lorem massa bibendum in turpis 
-                viverra. Vel elementum nunc malesuada velit in bibendum aliquet ac sit.
-                <br /> <br />
-                Et sit ultricies faucibus sed. Purus adipiscing donec elementum velit. 
-                Sit et ligula venenatis in sem ut egestas ac scelerisque. Sed neque arcu 
-                nunc amet. Gravida sit integer amet id amet magna senectus sit. Turpis erat 
-                diam commodo malesuada.
+               Our traveling consultancy provides comprehensive relocation services to individuals,
+               including customized planning, visa and immigration assistance, housing solutions,
+               school search for individuals, orientation and settling-in support, and ongoing 
+               destination services,
+               all delivered by our experienced and dedicated team of relocation specialists.
               </div>
               <br />
-              <Button  style={{backgroundColor: "#044163"}}>Book This Service</Button>
+              <Bookaservice/>
+              {/* <Button  style={{backgroundColor: "#044163"}}>Book This Service</Button> */}
             </div>
         </Col>
         <Col className='d-flex justify-content-center align-items-center pb-5'>
@@ -96,18 +103,15 @@ const Whatweoffer = () => {
             <div className='content-wrapper text-white px-5'>
               <h2> Crash Course</h2>
               <div className=''>
-                Lorem ipsum dolor sit amet consectetur. At id tortor odio arcu 
-                rhoncus a sit enim. Massa sem neque lorem massa bibendum in turpis 
-                viverra. Vel elementum nunc malesuada velit in bibendum aliquet ac sit.
-                <br /> <br />
-                Et sit ultricies faucibus sed. Purus adipiscing donec elementum velit. 
-                Sit et ligula venenatis in sem ut egestas ac scelerisque. Sed neque arcu 
-                nunc amet. Gravida sit integer amet id amet magna senectus sit. Turpis erat 
-                diam commodo malesuada.
+              Our crash courses provide an accelerated and focused learning experience for individuals 
+              seeking to quickly gain new skills or knowledge in various fields, including but not limited 
+              to languages, technology, business, and creative arts, through expert instruction, hands-on practice, 
+              and targeted feedback, all designed to maximize learning outcomes in a short period of time.
               </div>
               <br />
-              <Button  style={{backgroundColor: "#044163"}}>Book This Service</Button>
-              <Button  className="mx-5 px-5" style={{backgroundColor: "#044163"}}>Course List</Button>
+              <Bookaservice/>
+              <CourseList/>
+              {/* <Button  className="mx-5 px-5" style={{backgroundColor: "#044163"}}>Course List</Button> */}
             </div>
         </Col>
       </Row>
@@ -118,17 +122,13 @@ const Whatweoffer = () => {
             <div className='content-wrapper text-white px-5'>
               <h2> CV Review</h2>
               <div className=''>
-                Lorem ipsum dolor sit amet consectetur. At id tortor odio arcu 
-                rhoncus a sit enim. Massa sem neque lorem massa bibendum in turpis 
-                viverra. Vel elementum nunc malesuada velit in bibendum aliquet ac sit.
-                <br /> <br />
-                Et sit ultricies faucibus sed. Purus adipiscing donec elementum velit. 
-                Sit et ligula venenatis in sem ut egestas ac scelerisque. Sed neque arcu 
-                nunc amet. Gravida sit integer amet id amet magna senectus sit. Turpis erat 
-                diam commodo malesuada.
+                Our CV review service offers a comprehensive and personalized evaluation of an individual's resume, 
+               highlighting strengths and weaknesses, providing feedback and suggestions for improvement,
+               optimizing the document's structure, content, and formatting, and enhancing
+               its overall effectiveness to increase the chances of securing an interview and landing a desired job.
               </div>
               <br />
-              <Button  style={{backgroundColor: "#044163"}}>Book This Service</Button>
+              <Bookaservice/>
             </div>
         </Col>
         <Col className='d-flex justify-content-center align-items-center pb-5'>
@@ -145,17 +145,14 @@ const Whatweoffer = () => {
             <div className='content-wrapper text-white px-5'>
               <h2> Certificate</h2>
               <div className=''>
-                Lorem ipsum dolor sit amet consectetur. At id tortor odio arcu 
-                rhoncus a sit enim. Massa sem neque lorem massa bibendum in turpis 
-                viverra. Vel elementum nunc malesuada velit in bibendum aliquet ac sit.
-                <br /> <br />
-                Et sit ultricies faucibus sed. Purus adipiscing donec elementum velit. 
-                Sit et ligula venenatis in sem ut egestas ac scelerisque. Sed neque arcu 
-                nunc amet. Gravida sit integer amet id amet magna senectus sit. Turpis erat 
-                diam commodo malesuada.
+               We offer certification in all our Courses, these certificates indicate to your 
+              potential employers or clients that the person holding the certification has met certain
+               standards of proficiency in the course learnt. Also, some of the benefits of obtaining 
+               JakpaWithAPlan certification for your course include increased credibility, greater job opportunities,
+               and a competitive edge over other job applicants who do not have the certification
               </div>
               <br />
-              <Button  style={{backgroundColor: "#044163"}}>Book This Service</Button>
+              <Bookaservice/>
             </div>
         </Col>
       </Row>

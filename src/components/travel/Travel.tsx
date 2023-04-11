@@ -11,9 +11,9 @@ import './travel.css';
 const Travel = () => {
   return (
     <div>
-      <div className='container-fluid bg-black text-white travel-section-wrapper' style={{ height: "100vh" }}>
+      <div className='container-fluid bg-black text-white travel-section-wrapper' style={{ height: "" }}>
         <Row className='h-100'>
-          <Col className='travel-img-col'>
+          <Col className='travel-img-col  d-flex justify-content-center align-items-center'>
             <div className='container-fluid travel-img-wrapper'style={{ maxWidth: "560px" }}>
               <Row>
                 <Col className='col-sm-4' style={{ position: "relative" }}>
@@ -49,7 +49,7 @@ const Travel = () => {
           </Col>
           <Col className='d-flex justify-content-center travel-content-col'>
             <div className='travel-content-wrapper'>
-              <h2>Travel With A Plan</h2>
+              <h2>Relocate With A Plan </h2>
               <ul className='travel-list'>
                 <li>Build a skill 
                   <span>Building a skill is like building a muscle - 
