@@ -1,15 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import './bookaservice.css';
 
+
+
 function Bookaservice() {
+  const options = ["Select Service", "Consultancy", "Crash Course", "CV Review", "Certification"]
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  const [isHidden, setIsHidden] = useState(options[1])
+  
   return (
     <>
       <Button className='bookaservice-btn mx-2' style={{backgroundColor: "#044163"}} onClick={handleShow}>
@@ -47,16 +52,22 @@ function Bookaservice() {
                 autoFocus
               />
             </Form.Group>
-        
+            
             <Form.Group className="mb-3"  controlId="exampleForm.ControlInput1">
               <Form.Label>Service</Form.Label>
               <Form.Select aria-label="Select Service">
-              <option>Select Service</option>
-              <option value="Consultancy">Consultancy</option>
-              <option value="Crash Course">Crash Course</option>
-              <option value="CV Review">CV Review</option>
-              <option value="Certification">Certification</option>
-            </Form.Select>
+                {options.map((option) => (
+                  <option value={option} key={option}>
+                    {option}
+                  </option>
+                ))}
+              </Form.Select>
+              <Form.Control
+                className={isHidden ? "hide" : "show"}
+                placeholder='Additional Details'
+                as='textarea'
+                >
+              </Form.Control>
             </Form.Group>
           
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -77,6 +88,7 @@ function Bookaservice() {
           <Button style={{backgroundColor: "#044163"}} onClick={handleClose}>
             Book
           </Button>
+
         </Modal.Footer>
       </Modal>
     </>

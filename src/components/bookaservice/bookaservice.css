@@ -2,3 +2,11 @@
     border-color: aliceblue;
      background-color: #8CACD2;
 }
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
