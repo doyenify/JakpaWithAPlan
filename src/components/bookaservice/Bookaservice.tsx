@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
@@ -13,7 +13,6 @@ function Bookaservice() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const [isHidden, setIsHidden] = useState(options[1])
   
   return (
     <>
@@ -63,7 +62,7 @@ function Bookaservice() {
                 ))}
               </Form.Select>
               <Form.Control
-                className={isHidden ? "hide" : "show"}
+                
                 placeholder='Additional Details'
                 as='textarea'
                 >
