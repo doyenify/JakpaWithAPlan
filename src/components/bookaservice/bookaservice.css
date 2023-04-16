@@ -7,6 +7,24 @@
     display: none;
 }
 
+.hideList {
+    display: none;
+}
+
+.showList {
+    display: block;
+    margin-top: 20px;
+}
+
 .show {
     display: block;
+    margin-top: 20px;
+}
+
+.calendly-btn {
+    width: 100%;
+    padding: 8px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 5px;
 }
