@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
@@ -43,6 +43,7 @@ function Bookaservice() {
     )
   }
  
+
   return (
     <>
       <Button className='bookaservice-btn mx-2' style={{backgroundColor: "#044163"}} onClick={handleShow}>
@@ -92,6 +93,7 @@ function Bookaservice() {
               <Form.Control
                 className= {showInput ? 'hide' : 'show'}
                 placeholder= "Add Additional Details"
+
                 as='textarea'
               >
               </Form.Control>
