@@ -133,6 +133,7 @@ function Bookaservice() {
                 url="https://calendly.com/ifedolapo-ayoola95/30min"
                 rootElement={rootElementRef.current!}
                 text="Click here to schedule!"
+                className='calendly-btn'
               
               />
             </div>
