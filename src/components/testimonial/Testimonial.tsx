@@ -2,7 +2,10 @@ import {Carousel} from 'react-bootstrap';
 import { Quote } from 'react-bootstrap-icons';
 import "./testimonial.css";
 import ifedolapo_ourteam_img from "../../img/ifedolapo_ourteam_img.jpg";
-import ifeoluwa_team from "../../img/ifeoluwa_team.jpg";
+import testimonial2 from "../../img/testimonial-img-2.jpg";
+import testimonial3 from "../../img/testimonial-img-3.jpg";
+import testimonial4 from "../../img/testimonial-img-4.jpg";
+
 
 const testimonyArray = [
 `As a busy professional, I often struggle to find the time to attend traditional 
@@ -46,7 +49,7 @@ const Testimonial = () => {
           <div className='carousel-div'>
             <Carousel.Caption className='caption'>
               <div className='caption-wrapper'>
-                <div className='carousel-img-wrapper'><img alt='' src={ifedolapo_ourteam_img} ></img></div>
+                <div className='carousel-img-wrapper'><img alt='' src={testimonial4} ></img></div>
                 <h3>Testimonial</h3>
                 <span><Quote className='quote-icon' /></span>
                 <p className='testimony-content'>{testimonyArray[1]}</p>
@@ -59,7 +62,7 @@ const Testimonial = () => {
           <div className='carousel-div'>
             <Carousel.Caption className='caption'>
               <div className='caption-wrapper'>
-                <div className='carousel-img-wrapper'><img alt='' src={ifeoluwa_team} ></img></div>
+                <div className='carousel-img-wrapper'><img alt='' src={testimonial2} ></img></div>
                 <h3>Testimonial</h3>
                 <span><Quote className='quote-icon' /></span>
                 <p className='testimony-content'>{testimonyArray[2]}</p>
@@ -72,7 +75,7 @@ const Testimonial = () => {
           <div className='carousel-div'>
             <Carousel.Caption className='caption'>
               <div className='caption-wrapper'>
-                <div className='carousel-img-wrapper'><img width="100px" height="100px" alt='' src={ifedolapo_ourteam_img} style={{ borderRadius: "50%" }} ></img></div>
+                <div className='carousel-img-wrapper'><img width="100px" height="100px" alt='' src={testimonial3} style={{ borderRadius: "50%" }} ></img></div>
                 <h3>Testimonial</h3>
                 <span><Quote className='quote-icon' /></span>
                 <p className='testimony-content'>{testimonyArray[3]}</p>
