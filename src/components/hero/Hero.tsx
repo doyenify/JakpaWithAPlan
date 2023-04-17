@@ -11,7 +11,7 @@ const Hero = () => {
       <Card.ImgOverlay className='px-5 d-flex flex-column align-items justify-content-center'>
         <Card.Title style={{ fontSize:"40px" }}>Moving To Greener Pastures Is Not <br />  An Escape From Your Current Situation, <br />  But Rather A Step Towards Your Desired <br /> Destination
         </Card.Title>
-        <div className='mt-3'>
+        <div className='mt-3 hero-btn'>
             <Button  className='hero-about-btn  px-5 ' href='#aboutuspage' style={{backgroundColor: "#044163"}}>About Us</Button>
             <Button  className='hero-offer-btn mx-2 px-5' href='#whatweoffer' style={{backgroundColor: "transparent"}}>What We Offer</Button>
           </div>

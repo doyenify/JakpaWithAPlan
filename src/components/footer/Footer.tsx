@@ -5,12 +5,14 @@ import './footer.css';
 
 const Footer = () => {
   return (
-    <div className='text-center d-flex flex-column align-items-center justify-content-center' style={{backgroundColor: "#BAD0E3", height: "400px"}}>
+    <div className='footer-container text-center d-flex flex-column align-items-center justify-content-center'
+    //  style={{backgroundColor: "#BAD0E3", height: "400px"}}
+     >
         <div className='' style={{color: "#044163"}}>
             <h5 >JakpaWithAPlan</h5>  
             <br /> 
         </div>
-        <div style={{color: "#044163"}}>
+        <div className='footer-writeup' style={{color: "#044163"}}>
             <p>"Sometimes the biggest risk in life is not taking one. You only have one life to live, 
               and it's important to live it on your own terms. <br /> While it may be scary to leave your comfort 
               zone and the familiar, it's also an opportunity to grow and learn about yourself. <br />
@@ -19,12 +21,15 @@ const Footer = () => {
         </div>
         <div>
         <a href='https://twitter.com/home' className="mx-3" style={{color: "#044163", fontSize: "25px", textDecoration: "none"}} ><Facebook className="footer-link" /> </a>
-        <a  href='https://twitter.com/home' className="mx-3" style={{color: "#044163", fontSize: "25px", textDecoration: "none"}}  ><Linkedin className="footer-link" /> </a>
-        <a  href='https://twitter.com/home'className="mx-3" style={{color: "#044163", fontSize: "25px", textDecoration: "none"}}  ><Twitter className="footer-link" /> </a>
-        <a href='https://twitter.com/home' className="mx-3" style={{color: "#044163", fontSize: "25px", textDecoration: "none"}}  ><Instagram className="footer-link" /> </a>
+        <a  href="https://www.linkedin.com/company/doyenify/" className="mx-3" style={{color: "#044163", fontSize: "25px", textDecoration: "none"}}  ><Linkedin className="footer-link" /> </a>
+        <a  href="https://twitter.com/DOYENIFY?t=iIP1-2SvQTGkMvpng9Fddw&s=09"className="mx-3" style={{color: "#044163", fontSize: "25px", textDecoration: "none"}}  ><Twitter className="footer-link" /> </a>
+        <a href="https://www.instagram.com/doyenify/?igshid=ZDdkNTZiNTM%3D" className="mx-3" style={{color: "#044163", fontSize: "25px", textDecoration: "none"}}  ><Instagram className="footer-link" /> </a>
         <a href='https://twitter.com/home' className="mx-3" style={{color: "#044163", fontSize: "25px", textDecoration: "none"}}  ><Youtube className="footer-link" /> </a>
         </div>
         <br />
+        <div style={{color: "#044163"}}>jakpawithaplan@gmail.com  <br />  +37256704920 <br />   +2348135361806  </div>
+        <br />
+        <div></div>
         <div className=''>
             <Button className='footer-home-btn mx-3 px-3 py-1' 
               href='#headerpage'
@@ -62,6 +67,8 @@ const Footer = () => {
                 Services
             </Button>
             <Bookaservice/>
+
+            
            
             <br />  
             <a href="https://doyenify.com/" style={{textDecoration:"none"}} target='#blank'>
