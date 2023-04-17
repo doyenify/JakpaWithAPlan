@@ -3,6 +3,10 @@
    
    
 }
+.footer-container{
+    background-color:#BAD0E3 ;
+    height: 500px;
+}
 
 .footer-aboutus-btn:hover{
     border-color: aliceblue;
@@ -11,5 +15,28 @@
 
 .footer-service-btn:hover{
     border-color: aliceblue;
+    
+}
+
+@media screen and (max-width: 640px) {
+.footer-container{
+    height: 700px;
+}
+
+.footer-writeup{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.footer-home-btn{
+    margin-bottom: 20px;
+}
+.footer-aboutus-btn{
+    margin-bottom: 20px;
+}
+.footer-service-btn{
+    margin-bottom: 20px;
+} 
+
+
     
 }

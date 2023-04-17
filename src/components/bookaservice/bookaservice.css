@@ -3,6 +3,27 @@
      background-color: #8CACD2;
 }
 
+.service-field{
+    display: block;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0,0,0,0.2)
+}
+
+@media screen and (max-width: 760px) {
+    .modal-90w {
+        width: 90vw;
+      }
+      /* .bookaservice-btn{
+
+
+      } */
+
+}
+
 .hide {
     display: none;
 }

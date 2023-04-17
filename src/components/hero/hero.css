@@ -14,4 +14,22 @@
     .hero-card-container{
      height: 100vh;
     }
+
+    .hero-btn{
+        display: block;
+     
+    }
+    .hero-about-btn{
+    margin-bottom: 20px ;
+    margin-left: 5px;
+    width: 70%;
+
+
+    }
+    .hero-offer-btn{
+    padding-left: 0px;
+    margin-left: 0px;
+    background-color: #044163;
+    }
+  
 }

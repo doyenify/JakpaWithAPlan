@@ -2,3 +2,12 @@
     border-color: aliceblue;
     background-color: #8CACD2;
 }
+
+@media screen and (max-width: 760px) {
+  
+      .modal-90w {
+        width: 90vw;
+      }
+
+      
+}

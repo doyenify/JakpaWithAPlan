@@ -12,7 +12,7 @@ const AboutUs = () => {
             <div  className='content-wrapper text-white px-5'>
               <h2>About Us</h2>
               <div className='aboutus-contents'>
-              JakpaWithAPlan is a leading provider of services for traveling consultancy, CV review,
+              <strong> JakpaWithAPlan </strong>  is a leading provider of services for traveling consultancy, CV review,
                and crash courses with certification. We are dedicated to helping our clients achieve 
                their goals and reach their full potential, whether they are looking to advance their 
                career or explore new opportunities around the world.
