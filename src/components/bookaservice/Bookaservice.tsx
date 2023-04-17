@@ -17,10 +17,14 @@ const validationSchema = Yup.object().shape({
   description: Yup.string().required("Required"),
 });
 
+
+
 function Bookaservice() {
+  const options = ["Select Service", "Consultancy", "Crash Course", "CV Review", "Certification"]
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
 
   const options = [
     { label: "Select a Service", value: "" },
@@ -28,6 +32,9 @@ function Bookaservice() {
     { label: "Crash Course and Certification", value: "Crash Course and Certification" },
     { label: "CV Review", value: "CV Review" },
   ];
+
+
+  
 
   return (
     <>
@@ -127,6 +134,7 @@ function Bookaservice() {
                {errors.phone}
               </Form.Control.Feedback>
             </Form.Group>
+
             <Form.Group controlId="service">
                   <Form.Label>Service</Form.Label>
                   <Field  className="service-field" name="service" as={Form.Control} component="select">
@@ -140,6 +148,11 @@ function Bookaservice() {
                    {errors.service}
                   </Form.Control.Feedback>
                 </Form.Group> 
+
+            
+         
+          
+
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Description</Form.Label>
               <Form.Control
@@ -176,12 +189,14 @@ function Bookaservice() {
             Book
             <ToastContainer />
           </Button>
+
           
           </Modal.Footer>
           </Form>
            )}
            </Formik>
         </Modal.Body>
+
       </Modal>
     </>
   );
