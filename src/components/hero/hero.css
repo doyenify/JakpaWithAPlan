@@ -1,3 +1,8 @@
+.hero-title{
+    text-align: justify;
+}
+
+
 .hero-about-btn:hover{
     border-color: aliceblue;
     background-color: #8CACD2;

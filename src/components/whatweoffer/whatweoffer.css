@@ -1,3 +1,34 @@
+.consultancy-card-text{
+    text-align: justify;
+}
+.course-card-text{
+    text-align: justify;
+}
+
+.cv-card-text{
+    text-align: justify;
+}
+
+.certificate-card-text{
+    text-align: justify;
+}
+
+.consultancy-text{
+    margin-left: 2px;
+    text-align: justify;
+}
+.course-text{
+    text-align: justify;
+}
+
+.cv-text{
+    text-align: justify;
+}
+
+.certificate-text{
+    text-align: justify;
+}
+
 .readmore-btn:hover{
     transform: scale(1.01);
     box-shadow: 0 10px 20px rgba(4, 0, 10, 0.12), 0 4px 8px rgba(43, 41, 41, 0.06);

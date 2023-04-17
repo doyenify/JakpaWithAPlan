@@ -20,7 +20,7 @@ const Footer = () => {
               Take the leap and see where it takes you."</p>
         </div>
         <div>
-        <a href='https://twitter.com/home' className="mx-3" style={{color: "#044163", fontSize: "25px", textDecoration: "none"}} ><Facebook className="footer-link" /> </a>
+        <a href='https://www.facebook.com/profile.php?id=100091606221617&is_tour_dismissed=true' className="mx-3" style={{color: "#044163", fontSize: "25px", textDecoration: "none"}} ><Facebook className="footer-link" /> </a>
         <a  href="https://www.linkedin.com/company/doyenify/" className="mx-3" style={{color: "#044163", fontSize: "25px", textDecoration: "none"}}  ><Linkedin className="footer-link" /> </a>
         <a  href="https://twitter.com/DOYENIFY?t=iIP1-2SvQTGkMvpng9Fddw&s=09"className="mx-3" style={{color: "#044163", fontSize: "25px", textDecoration: "none"}}  ><Twitter className="footer-link" /> </a>
         <a href="https://www.instagram.com/doyenify/?igshid=ZDdkNTZiNTM%3D" className="mx-3" style={{color: "#044163", fontSize: "25px", textDecoration: "none"}}  ><Instagram className="footer-link" /> </a>
