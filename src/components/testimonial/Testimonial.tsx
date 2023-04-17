@@ -12,7 +12,7 @@ it from anywhere with an internet connection`,
 `Once I completed my course, I was able to submit my certificate for review. 
 The review process was quick and efficient, and I received my certificate within a few days. 
 The certificate itself was beautifully designed and looked very professional.`,
-` I would highly recommend JakpaWithAPlan to anyone looking to learn new skills and 
+` I would highly recommend  JakpaWithAPlan to anyone looking to learn new skills and 
 earn valuable certificates. The quality of the courses and the professionalism of the 
 certificate review process make this platform stand out from the rest. Thank you, 
 JakpaWithAPlan, for providing such a valuable service!"

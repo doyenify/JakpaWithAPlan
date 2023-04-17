@@ -148,7 +148,7 @@ const Whatweoffer = () => {
                We offer certification in all our Courses, these certificates indicate to your 
               potential employers or clients that the person holding the certification has met certain
                standards of proficiency in the course learnt. Also, some of the benefits of obtaining 
-               JakpaWithAPlan certification for your course include increased credibility, greater job opportunities,
+               <b> JakpaWithAPlan </b> certification for your course include increased credibility, greater job opportunities,
                and a competitive edge over other job applicants who do not have the certification
               </div>
               <br />
