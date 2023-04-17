@@ -69,7 +69,7 @@ const Whatweoffer = () => {
       </div>
        <div>
           <a className='text-center' style={{textDecoration: "none", color: "#ffffff"}} 
-           href="#whatweoffer"> <h5> Book A Service <ArrowRightShort className="offer-arrow"/></h5>
+           href="#whatweoffer"> <h5> <Bookaservice/> <ArrowRightShort className="offer-arrow"/></h5>
           </a>
       </div>
       <div className='mt-5'>

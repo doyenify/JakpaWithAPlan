@@ -6,6 +6,7 @@ import Travel from './components/travel/Travel';
 import Whatweoffer from './components/whatweoffer/Whatweoffer';
 import Testimonial from './components/testimonial/Testimonial';
 import Footer from './components/footer/Footer';
+import './App.css';
 
 function App() {
   return (

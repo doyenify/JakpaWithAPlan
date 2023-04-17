@@ -31,9 +31,9 @@
     
     .travel-img-col {
         height: 100vh;
-        display: none;
+        display: none !important;
     }
-
+    
     .travel-content-col {
         height: 100vh;
         padding-top: 3rem;
