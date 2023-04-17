@@ -20,7 +20,7 @@ const validationSchema = Yup.object().shape({
 
 
 function Bookaservice() {
-  const options = ["Select Service", "Consultancy", "Crash Course", "CV Review", "Certification"]
+
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
