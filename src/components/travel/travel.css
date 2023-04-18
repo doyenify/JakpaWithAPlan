@@ -20,13 +20,18 @@
     font-weight: 300;
 }
 
+.travel-skill{
+   text-align: justify;
+}
 @media screen and (max-width: 760px) {
     .travel-section-wrapper {
         height: 100vh;
-        padding-top: 400px;
-        padding-bottom: 800px;
-        padding-left: 10px;
-        padding-right: 10px;
+        margin-top: 600px;
+        margin-bottom: 200px;
+        /* padding-left: 10px;
+        padding-right: 10px; */
+        margin-left: 16px;
+        margin-right: 24px;
     }
     
     .travel-img-col {
@@ -40,3 +45,4 @@
     }
 
 }
+

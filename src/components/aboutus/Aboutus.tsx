@@ -5,8 +5,8 @@ import './aboutus.css';
 
 const AboutUs = () => {
   return (
-    <div>
-      <div id='aboutuspage' className='container-fluid bg-black' style={{ height: "100vh" }}>
+    <div style={{ height: "100vh" }}>
+      <div id='aboutuspage' className='container-fluid bg-black'  style={{ height: "100vh" }}>
         <Row className='h-100 py-5'>
           <Col className='col-12 col-sm-6 d-flex justify-content-center align-items-center pb-5'>
             <div  className='content-wrapper text-white px-5'>

@@ -89,14 +89,14 @@ const Whatweoffer = () => {
               {/* <Button  style={{backgroundColor: "#044163"}}>Book This Service</Button> */}
             </div>
         </Col>
-        <Col className='d-flex justify-content-center align-items-center pb-5'>
+        <Col className='consultancy-col-img d-flex justify-content-center align-items-center pb-5'>
              <img src="./img/consultancyimage.png" alt="Consultancy" /> 
         </Col>
       </Row>
       </div>
       <div className='mt-5'>
       <Row id='coursepage' className='py-5'>
-        <Col className='d-flex justify-content-center align-items-center pb-5'>
+        <Col className=' course-col-img d-flex justify-content-center align-items-center pb-5'>
              <img src="./img/courseimage.png" alt="Course" /> 
         </Col>
         <Col className='d-flex justify-content-center align-items-center pb-5'>
@@ -131,17 +131,17 @@ const Whatweoffer = () => {
               <Bookaservice/>
             </div>
         </Col>
-        <Col className='d-flex justify-content-center align-items-center pb-5'>
+        <Col className=' cv-col-img d-flex justify-content-center align-items-center pb-5'>
              <img src="./img/cvimage.png" alt="Cv" /> 
         </Col>
       </Row>
       </div>
       <div className=''>
       <Row id='certificatepage' className=' py-5'>
-        <Col className='d-flex justify-content-center align-items-center pb-5'>
+        <Col className=' certificate-col-img d-flex justify-content-center align-items-center pb-5'>
              <img src="./img/certificateimage.png" alt="Certificate" /> 
         </Col>
-        <Col className='d-flex justify-content-center align-items-center pb-5'>
+        <Col className=' d-flex justify-content-center align-items-center pb-5'>
             <div className='content-wrapper text-white px-5'>
               <h2> Certificate</h2>
               <div className='certificate-text'>
