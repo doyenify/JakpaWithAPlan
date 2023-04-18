@@ -182,7 +182,6 @@ function Bookaservice() {
             </Button>
             <Button
             style={{backgroundColor: "#044163"}}
-            onClick={handleClose}
             disabled={isSubmitting}
             type="submit"
             > 
