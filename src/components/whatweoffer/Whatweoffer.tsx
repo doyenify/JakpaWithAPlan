@@ -18,7 +18,7 @@ const Whatweoffer = () => {
               <Card.Img variant="top" src="./img/consultancy.png"  />
                 <Card.Body>
                   <Card.Title>Consultancy</Card.Title>
-                    <Card.Text>
+                    <Card.Text className="consultancy-card-text" >
                     Our traveling consultancy provides comprehensive relocation services to individuals,
                    including customized planning, visa and immigration...
                    </Card.Text>
@@ -31,9 +31,9 @@ const Whatweoffer = () => {
               <Card.Img variant="top" src="./img/course.png"  />
                 <Card.Body>
                   <Card.Title>Crash Course</Card.Title>
-                    <Card.Text>
+                    <Card.Text className="course-card-text">
                     Our crash courses provide an accelerated and focused learning experience for individuals 
-                   seeking to quickly gain new skills or...
+                   seeking to quickly gain new skills or ...
                    </Card.Text>
                     <Button className='readmore-btn' href='#coursepage' style={{backgroundColor: "#044163"}}>Read More</Button>
                 </Card.Body>
@@ -44,7 +44,7 @@ const Whatweoffer = () => {
               <Card.Img variant="top" src="./img/cv.png"  />
                 <Card.Body>
                   <Card.Title>CV Review</Card.Title>
-                    <Card.Text>
+                    <Card.Text className="cv-card-text" >
                     Our CV review service offers a comprehensive and personalized evaluation of an individual's resume, 
                     highlighting...
                    </Card.Text>
@@ -57,7 +57,7 @@ const Whatweoffer = () => {
               <Card.Img variant="top" src="./img/certificate.png"  />
                 <Card.Body>
                   <Card.Title>Certificate</Card.Title>
-                    <Card.Text>
+                    <Card.Text className="certificate-card-text">
                     We offer certification in all our Courses, these certificates indicate to your 
                    potential employers or clients that the person...
                    </Card.Text>
@@ -77,7 +77,7 @@ const Whatweoffer = () => {
         <Col className='d-flex justify-content-center align-items-center pb-5'>
             <div className='content-wrapper text-white px-5'>
               <h2> Consultancy</h2>
-              <div className=''>
+              <div className='consultancy-text'>
                Our traveling consultancy provides comprehensive relocation services to individuals,
                including customized planning, visa and immigration assistance, housing solutions,
                school search for individuals, orientation and settling-in support, and ongoing 
@@ -102,7 +102,7 @@ const Whatweoffer = () => {
         <Col className='d-flex justify-content-center align-items-center pb-5'>
             <div className='content-wrapper text-white px-5'>
               <h2> Crash Course</h2>
-              <div className=''>
+              <div className='course-text'>
               Our crash courses provide an accelerated and focused learning experience for individuals 
               seeking to quickly gain new skills or knowledge in various fields, including but not limited 
               to languages, technology, business, and creative arts, through expert instruction, hands-on practice, 
@@ -121,7 +121,7 @@ const Whatweoffer = () => {
         <Col className='d-flex justify-content-center align-items-center pb-5'>
             <div className='content-wrapper text-white px-5'>
               <h2> CV Review</h2>
-              <div className=''>
+              <div className='cv-text'>
                 Our CV review service offers a comprehensive and personalized evaluation of an individual's resume, 
                highlighting strengths and weaknesses, providing feedback and suggestions for improvement,
                optimizing the document's structure, content, and formatting, and enhancing
@@ -144,7 +144,7 @@ const Whatweoffer = () => {
         <Col className='d-flex justify-content-center align-items-center pb-5'>
             <div className='content-wrapper text-white px-5'>
               <h2> Certificate</h2>
-              <div className=''>
+              <div className='certificate-text'>
                We offer certification in all our Courses, these certificates indicate to your 
               potential employers or clients that the person holding the certification has met certain
                standards of proficiency in the course learnt. Also, some of the benefits of obtaining 
