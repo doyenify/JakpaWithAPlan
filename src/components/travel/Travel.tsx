@@ -52,31 +52,31 @@ const Travel = () => {
               <h2>Relocate With A Plan </h2>
               <ul className='travel-list'>
                 <li>Build a skill 
-                  <span>Building a skill is like building a muscle - 
+                  <span className='travel-skill'>Building a skill is like building a muscle - 
                       the more you work on it, the stronger it becomes.
                   </span>
                 </li>
                 <li>Build Competence 
-                  <span>
+                  <span className='travel-skill'>
                     Building competence is a journey, not a destination. 
                     It requires dedication, persistence, and a commitment to continuous learning.
                   </span>
                 </li>
                 <li>Increase Income
-                  <span>
+                  <span className='travel-skill'>
                     We assist individuals by ensuring improvement in 
                     ability to explore various ways of increasing their income.
                   </span>
                 </li>
                 <li>Build A Career 
-                  <span>
+                  <span className='travel-skill'>
                     Building a successful career requires self-awareness, skill development, 
                     dedication, hard work, continuous learning, adaptability, and a clear vision 
                     of one's goals.
                   </span>
                 </li>
                 <li>Dream Job 
-                  <span>
+                  <span className='travel-skill'>
                     Your dream job is not just a career, it's a reflection of your passion, 
                     purpose, and values that brings fulfillment and satisfaction to your life.
                   </span>

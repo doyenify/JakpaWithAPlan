@@ -3,6 +3,8 @@ import { Quote } from 'react-bootstrap-icons';
 import "./testimonial.css";
 import ifedolapo_ourteam_img from "../../img/ifedolapo_ourteam_img.jpg";
 import ifeoluwa_team from "../../img/ifeoluwa_team.jpg";
+import davidson from "../../img/davidson.jpg";
+import solagbade_ourteam_img from "../../img/solagbade_ourteam_img.jpg";
 
 const testimonyArray = [
 `As a busy professional, I often struggle to find the time to attend traditional 
@@ -46,11 +48,11 @@ const Testimonial = () => {
           <div className='carousel-div'>
             <Carousel.Caption className='caption'>
               <div className='caption-wrapper'>
-                <div className='carousel-img-wrapper'><img alt='' src={ifedolapo_ourteam_img} ></img></div>
+                <div className='carousel-img-wrapper'><img alt='' src={davidson} ></img></div>
                 <h3>Testimonial</h3>
                 <span><Quote className='quote-icon' /></span>
                 <p className='testimony-content'>{testimonyArray[1]}</p>
-                <p>KOFFI</p>
+                <p>DAVIDSON</p>
               </div>
             </Carousel.Caption>
           </div>
@@ -72,7 +74,7 @@ const Testimonial = () => {
           <div className='carousel-div'>
             <Carousel.Caption className='caption'>
               <div className='caption-wrapper'>
-                <div className='carousel-img-wrapper'><img width="100px" height="100px" alt='' src={ifedolapo_ourteam_img} style={{ borderRadius: "50%" }} ></img></div>
+                <div className='carousel-img-wrapper'><img width="100px" height="100px" alt='' src={solagbade_ourteam_img} style={{ borderRadius: "50%" }} ></img></div>
                 <h3>Testimonial</h3>
                 <span><Quote className='quote-icon' /></span>
                 <p className='testimony-content'>{testimonyArray[3]}</p>
