@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
@@ -14,11 +14,13 @@ const validationSchema = Yup.object().shape({
   email: Yup.string().email("Invalid email").required("Required"),
   phone: Yup.number().required("Required"),
   service: Yup.string().required("Required"),
+  course: Yup.string().required("Required"),
+  country: Yup.string().required("Required"),
   description: Yup.string().required("Required"),
 });
 
 
-
+ 
 function Bookaservice() {
 
   const [show, setShow] = useState(false);
@@ -32,9 +34,24 @@ function Bookaservice() {
     { label: "Crash Course and Certification", value: "Crash Course and Certification" },
     { label: "CV Review", value: "CV Review" },
   ];
-
-
+  const courseList = ["--Course List--", "HTML", "CSS", "JavaScript", "Web Development", "Frameworks (React, Angular, or Vue)", "Excel", "Business Analysis", "Business Intelligence", "Programming", "Cyber Security", "Digital Marketing", "Data Analysis", "Statistics",
+                      "Data Visualization", "Product Design", "Graphics", "Video Editing", "Front End Development", "Back End Development", "Data Base", "Leadership" ]
+  const countryList = [ "--Choose Country--","Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","Antigua &amp; Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia &amp; Herzegovina","Botswana","Brazil","British Virgin Islands","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Cape Verde","Cayman Islands","Chad","Chile","China","Colombia","Congo","Cook Islands","Costa Rica","Cote D Ivoire","Croatia","Cruise Ship","Cuba","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Estonia","Ethiopia","Falkland Islands","Faroe Islands","Fiji","Finland","France","French Polynesia","French West Indies","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar","Greece","Greenland","Grenada","Guam","Guatemala","Guernsey","Guinea","Guinea Bissau","Guyana","Haiti","Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Isle of Man","Israel","Italy","Jamaica","Japan","Jersey","Jordan","Kazakhstan","Kenya","Kuwait","Kyrgyz Republic","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macau","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Mauritania","Mauritius","Mexico","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Namibia","Nepal","Netherlands","Netherlands Antilles","New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","Norway","Oman","Pakistan","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Puerto Rico","Qatar","Reunion","Romania","Russia","Rwanda","Saint Pierre &amp; Miquelon","Samoa","San Marino","Satellite","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","South Africa","South Korea","Spain","Sri Lanka","St Kitts &amp; Nevis","St Lucia","St Vincent","St. Lucia","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor L'Este","Togo","Tonga","Trinidad &amp; Tobago","Tunisia","Turkey","Turkmenistan","Turks &amp; Caicos","Uganda","Ukraine","United Arab Emirates","United Kingdom","Uruguay","Uzbekistan","Venezuela","Vietnam","Virgin Islands (US)","Yemen","Zambia","Zimbabwe"];
+  const courseRef = useRef<HTMLDivElement | null>(null);
+  //const serviceRef = useRef<HTMLSelectElement | null>(null) 
   
+  const handleServiceChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const selectedValue = e.target.value
+    if(selectedValue === "Crash Course and Certification") {
+      if(courseRef.current)
+      courseRef.current.style.display = "block"
+    } else {
+      if(courseRef.current) {
+        courseRef.current.style.display = "none"
+      }
+    }
+    console.log(selectedValue)
+  }
 
   return (
     <>
@@ -52,7 +69,9 @@ function Bookaservice() {
                     fullname: "",
                     email: "",
                     phone: "",
-                    service: "", 
+                    service: "",
+                    course: "",
+                    country: "",
                     description: ""
                   }}
                   onSubmit={(values, { setSubmitting, resetForm }) => {
@@ -87,57 +106,57 @@ function Bookaservice() {
           noValidate
           onSubmit={handleSubmit}
           >
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Full Name</Form.Label>
-              <Form.Control
-                className="contact-input"
-                type="text"
-                name="fullname"
-                value={values.fullname}
-                onChange={handleChange}
-                onBlur={handleBlur}
-                isInvalid={!!errors.fullname}
-              />
-               <Form.Control.Feedback type="invalid">
-               {errors.fullname}
-              </Form.Control.Feedback>
-            </Form.Group> 
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Email Address</Form.Label>
-              <Form.Control
-                className="contact-input"
-                type="text"
-                name="email"
-                value={values.email}
-                onChange={handleChange}
-                onBlur={handleBlur}
-                isInvalid={!!errors.email}
-              />
-              <Form.Control.Feedback type="invalid">
-               {errors.email}
-              </Form.Control.Feedback>
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Phone Number</Form.Label>
-              <Form.Control
-                placeholder=""
-                autoFocus
-                className="contact-input"
-                type="text"
-                name="phone"
-                value={values.phone}
-                onChange={handleChange}
-                onBlur={handleBlur}
-                isInvalid={!!errors.phone}
-              />
-              <Form.Control.Feedback type="invalid">
-               {errors.phone}
-              </Form.Control.Feedback>
-            </Form.Group>
+                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                  <Form.Label>Full Name</Form.Label>
+                  <Form.Control
+                    className="contact-input"
+                    type="text"
+                    name="fullname"
+                    value={values.fullname}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    isInvalid={!!errors.fullname}
+                  />
+                  <Form.Control.Feedback type="invalid">
+                  {errors.fullname}
+                  </Form.Control.Feedback>
+                </Form.Group> 
+                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                  <Form.Label>Email Address</Form.Label>
+                  <Form.Control
+                    className="contact-input"
+                    type="text"
+                    name="email"
+                    value={values.email}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    isInvalid={!!errors.email}
+                  />
+                  <Form.Control.Feedback type="invalid">
+                  {errors.email}
+                  </Form.Control.Feedback>
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                  <Form.Label>Phone Number</Form.Label>
+                  <Form.Control
+                    placeholder=""
+                    autoFocus
+                    className="contact-input"
+                    type="text"
+                    name="phone"
+                    value={values.phone}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    isInvalid={!!errors.phone}
+                  />
+                  <Form.Control.Feedback type="invalid">
+                  {errors.phone}
+                  </Form.Control.Feedback>
+                </Form.Group>
 
-            <Form.Group controlId="service">
+                <Form.Group controlId="service">
                   <Form.Label>Service</Form.Label>
-                  <Field  className="service-field" name="service" as={Form.Control} component="select">
+                  <Field className="service-field" onChange={handleServiceChange} name="service" as={Form.Control} component="select">
                     {options.map((option) => (
                       <option value={option.value} key={option.value}>
                         {option.label}
@@ -147,32 +166,56 @@ function Bookaservice() {
                   <Form.Control.Feedback type="invalid">
                    {errors.service}
                   </Form.Control.Feedback>
-                </Form.Group> 
+                </Form.Group>
 
-            
-         
-          
+                <Form.Group controlId='course' ref={courseRef}>
+                  <Form.Label>Course</Form.Label>
+                  <Field className="service-field" name="course" as={Form.Control} component="select">
+                    {courseList.map((course) => (
+                      <option value={course} key={course}>
+                        {course}
+                      </option>
+                    ))}
+                  </Field>
+                  <Form.Control.Feedback>
+                    {errors.course}
+                  </Form.Control.Feedback>
+                </Form.Group>
 
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Description</Form.Label>
-              <Form.Control
-                placeholder=""
-                as="textarea"
-                rows={5}
-                className="contact-input"
-                type="text"
-                name="description"
-                value={values.description}
-                onChange={handleChange}
-                onBlur={handleBlur}
-                isInvalid={!!errors.description}
-              />
-              <Form.Control.Feedback type="invalid">
-               {errors.description}
-              </Form.Control.Feedback>
-               Note: For CV Review, kindly send your CV 
-               through any our social media platforms or email  
-            </Form.Group>           
+                <Form.Group controlId='country'>
+                  <Form.Label>Course</Form.Label>
+                  <Field className="service-field" name="country" as={Form.Control} component="select">
+                    {countryList.map((country) => (
+                      <option value={country} key={country}>
+                        {country}
+                      </option>
+                    ))}
+                  </Field>
+                  <Form.Control.Feedback>
+                    {errors.country}
+                  </Form.Control.Feedback>
+                </Form.Group>
+
+                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                  <Form.Label>Description</Form.Label>
+                  <Form.Control
+                    placeholder=""
+                    as="textarea"
+                    rows={5}
+                    className="contact-input"
+                    type="text"
+                    name="description"
+                    value={values.description}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    isInvalid={!!errors.description}
+                  />
+                  <Form.Control.Feedback type="invalid">
+                  {errors.description}
+                  </Form.Control.Feedback>
+                  Note: For CV Review, kindly send your CV 
+                  through any our social media platforms or email  
+                </Form.Group>           
             <Modal.Footer>
             <Button 
             style={{backgroundColor: "#044163"}}
