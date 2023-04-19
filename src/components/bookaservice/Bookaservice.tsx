@@ -31,10 +31,10 @@ function Bookaservice() {
     { label: "Consultancy", value: "Consultancy" },
     { label: "Crash Course and Certification", value: "Crash Course and Certification" },
     { label: "CV Review", value: "CV Review" },
+    { label: "Hands-on experience", value: "Hands-on Experience" },
+
   ];
 
-
-  
 
   return (
     <>
@@ -56,7 +56,7 @@ function Bookaservice() {
                     description: ""
                   }}
                   onSubmit={(values, { setSubmitting, resetForm }) => {
-                    axios.post('https://sheet.best/api/sheets/01bed241-fce6-4ac3-8da4-c227f30cc851', values)
+                    axios.post('https://sheet.best/api/sheets/bcc423df-7dec-42dd-89fe-b76690e9d465', values)
                     .then(response => {
                       console.log('loggin in', response);
                       setSubmitting(false);
@@ -149,10 +149,6 @@ function Bookaservice() {
                   </Form.Control.Feedback>
                 </Form.Group> 
 
-            
-         
-          
-
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Description</Form.Label>
               <Form.Control
@@ -188,8 +184,6 @@ function Bookaservice() {
             Book
             <ToastContainer />
           </Button>
-
-          
           </Modal.Footer>
           </Form>
            )}

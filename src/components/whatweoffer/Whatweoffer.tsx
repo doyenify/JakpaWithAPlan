@@ -30,10 +30,10 @@ const Whatweoffer = () => {
             <Card style={{ width: '18rem' }}>
               <Card.Img variant="top" src="./img/course.png"  />
                 <Card.Body>
-                  <Card.Title>Crash Course</Card.Title>
+                  <Card.Title>Crash Course and Certification</Card.Title>
                     <Card.Text className="course-card-text">
-                    Our crash courses provide an accelerated and focused learning experience for individuals 
-                   seeking to quickly gain new skills or ...
+                    Our crash courses provide an accelerated and focused learning experience for individuals... 
+          
                    </Card.Text>
                     <Button className='readmore-btn' href='#coursepage' style={{backgroundColor: "#044163"}}>Read More</Button>
                 </Card.Body>
@@ -56,10 +56,10 @@ const Whatweoffer = () => {
            <Card style={{ width: '18rem' }}>
               <Card.Img variant="top" src="./img/certificate.png"  />
                 <Card.Body>
-                  <Card.Title>Certificate</Card.Title>
+                  <Card.Title> Hands-on Experience</Card.Title>
                     <Card.Text className="certificate-card-text">
-                    We offer certification in all our Courses, these certificates indicate to your 
-                   potential employers or clients that the person...
+                    At JakpaWithAPlan, we believe in the power of hands-on experience. We offer a unique opportunity
+                   for individuals to gain...
                    </Card.Text>
                     <Button className='readmore-btn' href='#certificatepage' style={{backgroundColor: "#044163"}}>Read More</Button>
                 </Card.Body>
@@ -101,7 +101,7 @@ const Whatweoffer = () => {
         </Col>
         <Col className='d-flex justify-content-center align-items-center pb-5'>
             <div className='content-wrapper text-white px-5'>
-              <h2> Crash Course</h2>
+              <h2> Crash Course and Certification</h2>
               <div className='course-text'>
               Our crash courses provide an accelerated and focused learning experience for individuals 
               seeking to quickly gain new skills or knowledge in various fields, including but not limited 
@@ -143,13 +143,12 @@ const Whatweoffer = () => {
         </Col>
         <Col className=' d-flex justify-content-center align-items-center pb-5'>
             <div className='content-wrapper text-white px-5'>
-              <h2> Certificate</h2>
+              <h2> Hands-on Experience</h2>
               <div className='certificate-text'>
-               We offer certification in all our Courses, these certificates indicate to your 
-              potential employers or clients that the person holding the certification has met certain
-               standards of proficiency in the course learnt. Also, some of the benefits of obtaining 
-               <b> JakpaWithAPlan </b> certification for your course include increased credibility, greater job opportunities,
-               and a competitive edge over other job applicants who do not have the certification
+               At <b> JakpaWithAPlan</b> , we believe in the power of hands-on experience. We offer a unique opportunity
+               for individuals to gain practical, real-world experience through our Work Hands-on Experience program. 
+               Whether you're a recent graduate, a career changer, or looking to enhance your skills, our program allows you to roll up your sleeves and dive into meaningful work right from the start. You'll have the chance to apply your knowledge, learn from experienced professionals, and contribute to real projects that make a difference. Join us at JakpaWithAPlan 
+              and gain invaluable hands-on experience that will set you on the path to success in your chosen field
               </div>
               <br />
               <Bookaservice/>
