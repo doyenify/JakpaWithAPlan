@@ -24,7 +24,7 @@ const Travel = () => {
               <Row className='my-2'>
                 <Col className='col-sm-4' style={{ position: "relative" }}>
                     <img src={travel_img_2} alt="travel img"></img>
-                    <h5 style={{ fontSize: "1.25rem", margin: "0", position: "absolute", bottom: "16px", right: "5%", background: "rgba(0,0,0,0.3)", padding: "5px", borderRadius: "5px" }}>Earn More</h5>
+                    <h5 style={{ fontSize: "1.25rem", margin: "0", position: "absolute", bottom: "16px", right: "5%", background: "rgba(0,0,0,0.3)", padding: "5px", borderRadius: "5px" }}>Experience</h5>
                 </Col>
                 <Col className='col-sm-4' style={{ position: "relative" }}>
                     <img src={travel_img_3} alt="travel img"></img>
