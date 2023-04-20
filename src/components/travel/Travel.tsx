@@ -81,6 +81,13 @@ const Travel = () => {
                     purpose, and values that brings fulfillment and satisfaction to your life.
                   </span>
                 </li>
+                <li>Acquire Experience 
+                  <span className='travel-skill'>
+                    Experience is the priceless currency of wisdom, 
+                    earned through the trials and triumphs of life's journey,
+                    and it fuels the engine of personal growth.
+                  </span>
+                </li>
               </ul>
             </div>
           </Col>

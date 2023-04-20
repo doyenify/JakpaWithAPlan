@@ -8,7 +8,7 @@ import './whatweoffer.css';
 const Whatweoffer = () => {
   return (
     <div id='whatweoffer' style={{backgroundColor: "#000000", height:""}}>
-      <div  className='text-center mb-5' style={{color: "#ffffff"}}>
+      <div  className='whatweoffer-wrapper text-center mb-5' style={{color: "#ffffff"}}>
          <h2>What We Offer</h2>
       </div>
     <div className='d-flex justify-content-center align-items-center pb-5'>
