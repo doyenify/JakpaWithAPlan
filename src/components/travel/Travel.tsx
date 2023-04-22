@@ -24,7 +24,7 @@ const Travel = () => {
               <Row className='my-2'>
                 <Col className='col-sm-4' style={{ position: "relative" }}>
                     <img src={travel_img_2} alt="travel img"></img>
-                    <h5 style={{ fontSize: "1.25rem", margin: "0", position: "absolute", bottom: "16px", right: "5%", background: "rgba(0,0,0,0.3)", padding: "5px", borderRadius: "5px" }}>Earn More</h5>
+                    <h5 style={{ fontSize: "1.25rem", margin: "0", position: "absolute", bottom: "16px", right: "5%", background: "rgba(0,0,0,0.3)", padding: "5px", borderRadius: "5px" }}>Experience</h5>
                 </Col>
                 <Col className='col-sm-4' style={{ position: "relative" }}>
                     <img src={travel_img_3} alt="travel img"></img>
@@ -79,6 +79,13 @@ const Travel = () => {
                   <span className='travel-skill'>
                     Your dream job is not just a career, it's a reflection of your passion, 
                     purpose, and values that brings fulfillment and satisfaction to your life.
+                  </span>
+                </li>
+                <li>Acquire Experience 
+                  <span className='travel-skill'>
+                    Experience is the priceless currency of wisdom, 
+                    earned through the trials and triumphs of life's journey,
+                    and it fuels the engine of personal growth.
                   </span>
                 </li>
               </ul>
