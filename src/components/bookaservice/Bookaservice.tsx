@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import Button from 'react-bootstrap/Button';
+import { PopupButton } from "react-calendly";
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import './bookaservice.css';
@@ -25,6 +26,7 @@ function Bookaservice() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const rootElementRef = useRef<HTMLDivElement>(null)
 
   // const handleChange = (event: React.ChangeEvent<HTMLSelectElement>, setFieldValue: (field: string, value: any) => void) => {
   //   const selectedValue = event.target.value;
@@ -37,7 +39,6 @@ function Bookaservice() {
     { label: "Hands-on experience", value: "Hands-on Experience" },
 
   ];
-<<<<<<< HEAD
   const courseList = ["--Course List--", "HTML", "CSS", "JavaScript", "Web Development", "Frameworks (React, Angular, or Vue)", "Excel", "Business Analysis", "Business Intelligence", "Programming", "Cyber Security", "Digital Marketing", "Data Analysis", "Statistics",
                       "Data Visualization", "Product Design", "Graphics", "Video Editing", "Front End Development", "Back End Development", "Data Base", "Leadership" ]
   const countryList = [ "--Choose Country--","Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","Antigua &amp; Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia &amp; Herzegovina","Botswana","Brazil","British Virgin Islands","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Cape Verde","Cayman Islands","Chad","Chile","China","Colombia","Congo","Cook Islands","Costa Rica","Cote D Ivoire","Croatia","Cruise Ship","Cuba","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Estonia","Ethiopia","Falkland Islands","Faroe Islands","Fiji","Finland","France","French Polynesia","French West Indies","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar","Greece","Greenland","Grenada","Guam","Guatemala","Guernsey","Guinea","Guinea Bissau","Guyana","Haiti","Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Isle of Man","Israel","Italy","Jamaica","Japan","Jersey","Jordan","Kazakhstan","Kenya","Kuwait","Kyrgyz Republic","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macau","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Mauritania","Mauritius","Mexico","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Namibia","Nepal","Netherlands","Netherlands Antilles","New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","Norway","Oman","Pakistan","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Puerto Rico","Qatar","Reunion","Romania","Russia","Rwanda","Saint Pierre &amp; Miquelon","Samoa","San Marino","Satellite","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","South Africa","South Korea","Spain","Sri Lanka","St Kitts &amp; Nevis","St Lucia","St Vincent","St. Lucia","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor L'Este","Togo","Tonga","Trinidad &amp; Tobago","Tunisia","Turkey","Turkmenistan","Turks &amp; Caicos","Uganda","Ukraine","United Arab Emirates","United Kingdom","Uruguay","Uzbekistan","Venezuela","Vietnam","Virgin Islands (US)","Yemen","Zambia","Zimbabwe"];
@@ -45,10 +46,6 @@ function Bookaservice() {
   //const serviceRef = useRef<HTMLSelectElement | null>(null) 
   
   
-=======
-
-
->>>>>>> 624b3a80e10f63ce757b6f69820a72ae2a9e278d
   return (
     <>
       <Button className='bookaservice-btn mx-2' style={{backgroundColor: "#044163"}} onClick={handleShow}>
@@ -196,7 +193,6 @@ function Bookaservice() {
                 </Form.Group>
                 )}
 
-<<<<<<< HEAD
                 {values.service === 'Consultancy' && (
                   <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                   <Form.Label>Description</Form.Label>
@@ -217,31 +213,22 @@ function Bookaservice() {
                   </Form.Control.Feedback>  
                 </Form.Group>
                 )}
+
+              {values.service === 'Consultancy' && (
+                <div ref={rootElementRef}>
+                <PopupButton
+                  url="https://calendly.com/ifedolapo-ayoola95/30min"
+                  rootElement={rootElementRef.current!}
+                  text="Click here to schedule!"
+                  className='calendly-btn'
+                
+                />
+              </div>
+              )}
+
                 Note: For CV Review, kindly send your CV 
                   through any our social media platforms or email
                           
-=======
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Description</Form.Label>
-              <Form.Control
-                placeholder=""
-                as="textarea"
-                rows={5}
-                className="contact-input"
-                type="text"
-                name="description"
-                value={values.description}
-                onChange={handleChange}
-                onBlur={handleBlur}
-                isInvalid={!!errors.description}
-              />
-              <Form.Control.Feedback type="invalid">
-               {errors.description}
-              </Form.Control.Feedback>
-               Note: For CV Review, kindly send your CV 
-               through any our social media platforms or email  
-            </Form.Group>           
->>>>>>> 624b3a80e10f63ce757b6f69820a72ae2a9e278d
             <Modal.Footer>
             <Button 
             style={{backgroundColor: "#044163"}}
