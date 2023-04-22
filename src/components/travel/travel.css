@@ -2,9 +2,26 @@
 
 .travel-list {
     padding-top: 1.9em;
-    list-style-image: url(../../img/travel_check_icon.png);
-    
+    list-style-image: url(../../img/travel_check_icon.png);   
 }
+
+.travel-list li {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.highlight {
+    transition: 0.3s;
+    transform: scale(1.04);
+    opacity: 1 !important;
+}
+
+.un-highlight {
+    transition: 0.3s;
+    transform: scale(1);
+    opacity: 0.5;
+}
+
 
 .travel-content-wrapper li {
     font-size: 1.5rem;
@@ -22,6 +39,15 @@
 
 .travel-skill{
    text-align: justify;
+}
+
+.travel-img-parent {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.travel-img-parent:hover {
+    transform: scale(0.8) rotate(-15deg);
 }
 @media screen and (max-width: 760px) {
     .travel-section-wrapper {
