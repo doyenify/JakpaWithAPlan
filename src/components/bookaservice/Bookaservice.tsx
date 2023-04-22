@@ -14,20 +14,21 @@ const validationSchema = Yup.object().shape({
   email: Yup.string().email("Invalid email").required("Required"),
   phone: Yup.number().required("Required"),
   service: Yup.string().required("Required"),
-  course: Yup.string().required("Required"),
-  country: Yup.string().required("Required"),
-  description: Yup.string().required("Required"),
+  // course: Yup.string().required("Required"),
+  // country: Yup.string().required("Required"),
+  //description: Yup.string().required("Required"),
 });
 
 
- 
 function Bookaservice() {
 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-
+  // const handleChange = (event: React.ChangeEvent<HTMLSelectElement>, setFieldValue: (field: string, value: any) => void) => {
+  //   const selectedValue = event.target.value;
+  // }
   const options = [
     { label: "Select a Service", value: "" },
     { label: "Consultancy", value: "Consultancy" },
@@ -40,19 +41,7 @@ function Bookaservice() {
   const courseRef = useRef<HTMLDivElement | null>(null);
   //const serviceRef = useRef<HTMLSelectElement | null>(null) 
   
-  const handleServiceChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const selectedValue = e.target.value
-    if(selectedValue === "Crash Course and Certification") {
-      if(courseRef.current)
-      courseRef.current.style.display = "block"
-    } else {
-      if(courseRef.current) {
-        courseRef.current.style.display = "none"
-      }
-    }
-    console.log(selectedValue)
-  }
-
+  
   return (
     <>
       <Button className='bookaservice-btn mx-2' style={{backgroundColor: "#044163"}} onClick={handleShow}>
@@ -156,7 +145,7 @@ function Bookaservice() {
 
                 <Form.Group controlId="service">
                   <Form.Label>Service</Form.Label>
-                  <Field className="service-field" onChange={handleServiceChange} name="service" as={Form.Control} component="select">
+                  <Field className="service-field" name="service" as={Form.Control} component="select">
                     {options.map((option) => (
                       <option value={option.value} key={option.value}>
                         {option.label}
@@ -167,12 +156,13 @@ function Bookaservice() {
                    {errors.service}
                   </Form.Control.Feedback>
                 </Form.Group>
-
-                <Form.Group controlId='course' ref={courseRef}>
+                
+                {values.service === 'Crash Course and Certification' && (
+                  <Form.Group controlId='course' ref={courseRef}>
                   <Form.Label>Course</Form.Label>
                   <Field className="service-field" name="course" as={Form.Control} component="select">
                     {courseList.map((course) => (
-                      <option value={course} key={course}>
+                      <option value={course} key={course} >
                         {course}
                       </option>
                     ))}
@@ -181,9 +171,11 @@ function Bookaservice() {
                     {errors.course}
                   </Form.Control.Feedback>
                 </Form.Group>
-
-                <Form.Group controlId='country'>
-                  <Form.Label>Course</Form.Label>
+                )}
+                
+                {values.service === 'CV Review' && (
+                  <Form.Group controlId='country'>
+                  <Form.Label>Country</Form.Label>
                   <Field className="service-field" name="country" as={Form.Control} component="select">
                     {countryList.map((country) => (
                       <option value={country} key={country}>
@@ -195,8 +187,10 @@ function Bookaservice() {
                     {errors.country}
                   </Form.Control.Feedback>
                 </Form.Group>
+                )}
 
-                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                {values.service === 'Consultancy' && (
+                  <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                   <Form.Label>Description</Form.Label>
                   <Form.Control
                     placeholder=""
@@ -212,10 +206,12 @@ function Bookaservice() {
                   />
                   <Form.Control.Feedback type="invalid">
                   {errors.description}
-                  </Form.Control.Feedback>
-                  Note: For CV Review, kindly send your CV 
-                  through any our social media platforms or email  
-                </Form.Group>           
+                  </Form.Control.Feedback>  
+                </Form.Group>
+                )}
+                Note: For CV Review, kindly send your CV 
+                  through any our social media platforms or email
+                          
             <Modal.Footer>
             <Button 
             style={{backgroundColor: "#044163"}}
