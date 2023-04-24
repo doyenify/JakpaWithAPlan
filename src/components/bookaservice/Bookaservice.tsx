@@ -227,7 +227,7 @@ function Bookaservice() {
               )}
 
                 Note: For CV Review, kindly send your CV 
-                  through any our social media platforms or email
+                  to <a style={{color: "#000000"}} href='mailto:jakpawithaplan@gmail.com'>jakpawithaplan@gmail.com</a> using your full name as Title
                           
             <Modal.Footer>
             <Button 
