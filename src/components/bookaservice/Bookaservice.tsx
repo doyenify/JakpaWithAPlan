@@ -193,7 +193,7 @@ function Bookaservice() {
                 </Form.Group>
                 )}
 
-                {values.service === 'Consultancy' && (
+                {(values.service === 'Consultancy' || values.service === 'Hands-on Experience') && (
                   <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                   <Form.Label>Description</Form.Label>
                   <Form.Control
