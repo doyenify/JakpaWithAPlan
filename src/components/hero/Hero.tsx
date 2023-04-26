@@ -9,7 +9,7 @@ const Hero = () => {
       <Card className="mt-1  bg-dark text-white" style={{ borderRadius: "0px", height: "100vh" }}>
       <Card.Img src="./img/hero.png" alt="Card image" style={{ height: "100%", objectFit: "cover"}}/>
       <Card.ImgOverlay className='px-5 d-flex flex-column align-items justify-content-center'>
-        <Card.Title className="hero-title" style={{ fontSize:"40px" }}>Moving To Greener Pastures Is Not <br />  An Escape From Your Current Situation, <br />  But Rather A Step Towards Your Desired <br /> Destination
+        <Card.Title className="hero-title" style={{ fontSize:"2.5rem" }}>Moving To Greener Pastures Is Not <br />  An Escape From Your Current Situation, <br />  But Rather A Step Towards Your Desired <br /> Destination
         </Card.Title>
         <div className='mt-3 hero-btn'>
             <Button  className='hero-about-btn  px-5 ' href='#aboutuspage' style={{backgroundColor: "#044163"}}>About Us</Button>

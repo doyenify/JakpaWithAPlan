@@ -17,7 +17,6 @@ const handleClick = (index: number) => {
     setHighlight(index)
 }
   return (
-    <div>
       <div className='container-fluid bg-black text-white travel-section-wrapper' style={{ height: "" }}>
         <Row className='h-100'>
           <Col className='travel-img-col d-flex justify-content-center align-items-center'>
@@ -100,7 +99,6 @@ const handleClick = (index: number) => {
           </Col>
         </Row>
       </div>
-    </div>
   )
 }
 

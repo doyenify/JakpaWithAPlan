@@ -49,11 +49,23 @@
 .travel-img-parent:hover {
     transform: scale(0.8) rotate(-15deg);
 }
-@media screen and (max-width: 760px) {
+
+@media only screen and (max-width: 760px) {
+    .travel-img-col {
+        display: none !important;
+    }
+
     .travel-section-wrapper {
-        height: 100vh;
+        margin-top: 500px;
+    }
+}
+
+
+@media only screen and (max-width: 380px) {
+    .travel-section-wrapper {
+        /* height: 100vh; */
         margin-top: 600px;
-        margin-bottom: 200px;
+        margin-bottom: 400px;
         /* padding-left: 10px;
         padding-right: 10px; */
         margin-left: 16px;
