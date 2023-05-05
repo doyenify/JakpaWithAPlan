@@ -5,7 +5,7 @@
 }
 .footer-container{
     background-color:#BAD0E3 ;
-    height: 500px;
+    height: 600px;
 }
 
 .footer-aboutus-btn:hover{
@@ -20,7 +20,7 @@
 
 @media screen and (max-width: 640px) {
 .footer-container{
-    height: 700px;
+    height: 800px;
 }
 
 .footer-writeup{

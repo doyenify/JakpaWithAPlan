@@ -9,13 +9,23 @@ import './header.css';
 const Header = () => {
   return (
     <div id='headerpage'>
-     <Navbar  expand="lg" style={{backgroundColor: "#8CACD2"}}>
+     <Navbar  expand="lg" fixed="top" style={{backgroundColor: "#BAD0E3"}}>
       <Container fluid>
-        <Navbar.Brand className='ms-5' href="#" style={{color:"#ffffff", fontSize:"20px", fontWeight: "bold" }}>JakpaWithAPlan <br /> 
+        <Navbar.Brand className='ms-5' href="#"
+          >
+        <img 
+        src="./img/jakpalogo2.png" 
+        alt="jakpa logo"  
+        width="170"
+        height="auto"
+        className="d-inline-block align-top"
+        />  
         <a href="https://doyenify.com/" style={{textDecoration:"none"}} target='#blank' >
-        <h5 style={{color:"#044163", fontSize:"12px"}} className='poweredbydoyenify-header'> Powered by doyenify </h5> </a></Navbar.Brand>
+        <h5 style={{color:"#044163", fontSize:"12px"}} className='poweredbydoyenify-header'> Powered by doyenify </h5>
+        </a>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
+        <Navbar.Collapse id="navbarScroll" className="justify-content-end">
           <Nav
             className="me-auto my-2 my-lg-0"
             style={{ maxHeight: '100px' }}
