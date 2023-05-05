@@ -8,10 +8,17 @@ const Footer = () => {
     <div className='footer-container text-center d-flex flex-column align-items-center justify-content-center'
     //  style={{backgroundColor: "#BAD0E3", height: "400px"}}
      >
-        <div className='' style={{color: "#044163"}}>
-            <h5 >JakpaWithAPlan</h5>  
-            <br /> 
+        <div className='mt-5' style={{color: "#044163"}}>
+        <img 
+        src="./img/jakpalogo3.png" 
+        alt="jakpa logo"  
+        width="120"
+        height="auto"
+        className="d-inline-block align-top"
+        />  
+             
         </div>
+        <br />
         <div className='footer-writeup' style={{color: "#044163"}}>
             <p> <b> "Sometimes the biggest risk in life is not taking one. You only have one life to live, 
               and it's important to live it on your own terms. <br /> While it may be scary to leave your comfort 
