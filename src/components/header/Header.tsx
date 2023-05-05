@@ -25,7 +25,7 @@ const Header = () => {
         </a>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll" className="justify-content-end">
+        <Navbar.Collapse id="navbarScroll" className="">
           <Nav
             className="me-auto my-2 my-lg-0"
             style={{ maxHeight: '100px' }}
