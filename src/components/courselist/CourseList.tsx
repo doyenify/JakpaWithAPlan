@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import './courselist.css';
+import CourseTable from '../CourseTable';
+import CourseData from 'src/CourseData';
 
 
 function CourseList() {
@@ -9,7 +11,7 @@ function CourseList() {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
- 
+
   return (
     <>
       <Button className='courselist-btn mx-2 Px-5 '  style={{backgroundColor: "#044163"}} onClick={handleShow}>
@@ -21,17 +23,15 @@ function CourseList() {
           <Modal.Title className='text-center'> Our Range of Courses</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-         HTML <br /> CSS <br /> JavaScript <br /> Web Development Frameworks (React, Angular, or Vue) <br /> Excel <br /> Business Analysis <br /> Business Intelligence <br />Programming <br /> Cyber Security <br /> Digital Marketing <br /> Data Analysis <br /> Statistics <br /> 
-         Data Visualization <br />Product Design <br /> Graphics <br /> Video Editing <br />Front End Development <br /> Back End Development <br /> Data Base <br /> Leadership, 
+          {CourseData.map((data) => (
+            <CourseTable 
+              key={data.id}
+              id={data.id}
+              courseName={data.courseName}
+              courseDate={data.courseDate}
+            />
+          ))}
         </Modal.Body>
-        {/* <Modal.Footer>
-          <Button style={{backgroundColor: "#044163"}} onClick={handleClose}>
-            Close
-          </Button>
-          <Button style={{backgroundColor: "#044163"}} onClick={handleClose}>
-            Enquire
-          </Button>
-        </Modal.Footer> */}
       </Modal>
     </>
   );
