@@ -1,11 +1,13 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table';
-import Bookaservice from './bookaservice/Bookaservice';
+import CourseForm from './CourseForm';
 
-interface CourseTableProps {
+export interface CourseTableProps {
     id: number
-    courseName: string;
-    courseDate: string;
+    courseList: string;
+    date: string;
+    duration: string;
+    feeNaira: string;
   }
 
 const CourseTable:React.FC<CourseTableProps> = (props: CourseTableProps) => {
@@ -15,17 +17,21 @@ const CourseTable:React.FC<CourseTableProps> = (props: CourseTableProps) => {
                 <thead>
                     <tr>
                     <th>#</th>
-                    <th>Course Name</th>
-                    <th>Available Date</th>
+                    <th>Course</th>
+                    <th>Date</th>
+                    <th>Duration</th>
+                    <th>Pricing</th>
                     <th>Enroll</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                     <td>{props.id}</td>
-                    <td>{props.courseName}</td>
-                    <td>{props.courseDate}</td>
-                    <td><Bookaservice /></td>
+                    <td>{props.courseList}</td>
+                    <td>{props.date}</td>
+                    <td>{props.duration}</td>
+                    <td>{props.feeNaira}</td>
+                    <td><CourseForm /></td>
                     </tr>
                 </tbody>
             </Table>

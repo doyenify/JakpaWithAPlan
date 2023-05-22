@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import './courselist.css';
-import CourseTable from '../CourseTable';
-import CourseData from 'src/CourseData';
+import CourseTable, { CourseTableProps } from '../CourseTable';
 
 
 function CourseList() {
@@ -11,6 +10,20 @@ function CourseList() {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const [data, setData] = useState<CourseTableProps[]>([]);
+  
+  const getData = async () => {
+    try {
+        const res = await fetch("https://sheet.best/api/sheets/fe350476-a088-47ca-b5aa-b654b3ebb99a")
+        const jsonData = await res.json()
+        setData(jsonData)
+    } catch (error) {
+        console.log(error)
+    }
+}
+useEffect(() => {
+    getData()
+}, [])
 
   return (
     <>
@@ -22,13 +35,15 @@ function CourseList() {
         <Modal.Header closeButton>
           <Modal.Title className='text-center'> Our Range of Courses</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-          {CourseData.map((data) => (
+        <Modal.Body style={{fontSize: "14px"}}>
+          {data?.map((item) => (
             <CourseTable 
-              key={data.id}
-              id={data.id}
-              courseName={data.courseName}
-              courseDate={data.courseDate}
+              key={item.id}
+              id={item.id}
+              courseList={item.courseList}
+              date={item.date}
+              duration={item.duration}
+              feeNaira={item.feeNaira}
             />
           ))}
         </Modal.Body>
