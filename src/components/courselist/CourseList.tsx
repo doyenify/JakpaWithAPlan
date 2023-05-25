@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import { Table } from 'react-bootstrap';
 import './courselist.css';
 import CourseTable, { CourseTableProps } from '../CourseTable';
+
 
 
 function CourseList() {
@@ -31,21 +33,41 @@ useEffect(() => {
         Course List
       </Button>
 
-      <Modal  show={show} onHide={handleClose} >
+      <Modal  show={show} onHide={handleClose} size="lg">
         <Modal.Header closeButton>
           <Modal.Title className='text-center'> Our Range of Courses</Modal.Title>
         </Modal.Header>
         <Modal.Body style={{fontSize: "14px"}}>
-          {data?.map((item) => (
-            <CourseTable 
-              key={item.id}
-              id={item.id}
-              courseList={item.courseList}
-              date={item.date}
-              duration={item.duration}
-              feeNaira={item.feeNaira}
-            />
-          ))}
+        <Table striped bordered hover variant="dark">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Course</th>
+                <th>Date</th>
+                <th>Duration</th>
+                <th>Pricing</th>
+                <th>Enroll</th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.length > 0 ? (
+                (data?.map((item) => (
+                  <CourseTable
+                    key={item.id}
+                    id={item.id}
+                    courseList={item.courseList}
+                    date={item.date}
+                    duration={item.duration}
+                    feeNaira={item.feeNaira}
+                  />
+                )))
+              ) : (
+                <tr>
+                  <td>No data available</td>
+                </tr>)}
+              
+            </tbody>
+          </Table>
         </Modal.Body>
       </Modal>
     </>
