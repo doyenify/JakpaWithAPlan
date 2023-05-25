@@ -1,6 +1,7 @@
 import React from 'react';
 import CourseForm from './CourseForm';
 
+
 export interface CourseTableProps {
     id: number
     courseList: string;
@@ -16,8 +17,8 @@ const CourseTable:React.FC<CourseTableProps> = (props: CourseTableProps) => {
                 <td>{props.courseList}</td>
                 <td>{props.date}</td>
                 <td>{props.duration}</td>
-                <td>{props.feeNaira}</td>
-                <td><CourseForm /></td>
+                <td><CourseForm buttonText="More Info"/></td>
+                <td><CourseForm buttonText="Register"/></td>
             </tr>
     )
 }

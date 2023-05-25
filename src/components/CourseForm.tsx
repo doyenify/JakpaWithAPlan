@@ -14,7 +14,11 @@ const validationSchema = Yup.object().shape({
     course: Yup.string().required("Required")
 })
 
-const CourseForm:React.FC = () => {
+interface buttonTextProps {
+  buttonText: string;
+}
+
+const CourseForm:React.FC<buttonTextProps> = ({ buttonText }) => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -25,8 +29,8 @@ const CourseForm:React.FC = () => {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Register
+      <Button variant="primary" style={{backgroundColor: "#044163"}} onClick={handleShow}>
+        {buttonText}
       </Button>
 
       <Modal show={show} onHide={handleClose}>
@@ -128,6 +132,8 @@ const CourseForm:React.FC = () => {
             Register
             <ToastContainer />
           </Button>
+
+          <p style={{fontWeight: "bold", marginTop: "1rem", padding: "0"}}>NB: Our customer representative will get in touch with you for further info</p>
         </Modal.Footer>
           </Form>
         )}
