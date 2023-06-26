@@ -16,7 +16,7 @@ function CourseList() {
   
   const getData = async () => {
     try {
-        const res = await fetch("https://sheet.best/api/sheets/fe350476-a088-47ca-b5aa-b654b3ebb99a")
+        const res = await fetch("https://sheet.best/api/sheets/06e52649-1db7-4e7d-898d-e817d2df4bcb")
         const jsonData = await res.json()
         setData(jsonData)
     } catch (error) {
