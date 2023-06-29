@@ -74,6 +74,7 @@ const Footer = () => {
                 Services
             </Button>
             <Bookaservice/>
+            <Button className='mx-2 doyacad'>Doyenify Academy</Button>
             <br />  
             <a href="https://doyenify.com/" style={{textDecoration:"none"}} target='#blank' rel="noopener noreferrer">
             <div className='mt-5' style=

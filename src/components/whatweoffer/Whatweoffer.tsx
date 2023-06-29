@@ -111,6 +111,7 @@ const Whatweoffer = () => {
               <br />
               <Bookaservice/>
               <CourseList/>
+              <Button className='mx-2 doyacad'>Doyenify Academy</Button>
               {/* <Button  className="mx-5 px-5" style={{backgroundColor: "#044163"}}>Course List</Button> */}
             </div>
         </Col>

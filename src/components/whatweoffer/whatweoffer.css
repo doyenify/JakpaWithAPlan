@@ -54,6 +54,16 @@
     
 }
 
+.doyacad {
+    background-color: #038134;
+    border: 1px solid #69C9E2;
+}
+  
+.doyacad:hover {
+    background-color: #038134;
+    border: 1px solid #fff;
+}
+
 @keyframes arrowright{
     0% { left: 0;
 
