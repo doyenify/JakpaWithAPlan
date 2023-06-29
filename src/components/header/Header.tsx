@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
+import Button from 'react-bootstrap/Button';
 import Navbar from 'react-bootstrap/Navbar';
 import Makeenquiry from '../makeenquiry/Makeenquiry';
 import Bookaservice from '../bookaservice/Bookaservice';
@@ -33,6 +34,7 @@ const Header = () => {
           > 
           </Nav>
           <div className='pe-5 header-btn-container'>
+            <Button className='mx-2 doyacad'  href="https://academy.doyenify.com/">Doyenify Academy</Button>
             <Makeenquiry/>
             <Bookaservice/>
             {/* <Button className='mx-2'  style={{backgroundColor: "#044163"}}>Make An Enquiry</Button> */}
