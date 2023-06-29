@@ -109,9 +109,10 @@ const Whatweoffer = () => {
               and targeted feedback, all designed to maximize learning outcomes in a short period of time.
               </div>
               <br />
+              <Button className='mx-2 doyacad'  href="https://academy.doyenify.com/">Doyenify Academy</Button>
               <Bookaservice/>
               <CourseList/>
-              <Button className='mx-2 doyacad'>Doyenify Academy</Button>
+              
               {/* <Button  className="mx-5 px-5" style={{backgroundColor: "#044163"}}>Course List</Button> */}
             </div>
         </Col>

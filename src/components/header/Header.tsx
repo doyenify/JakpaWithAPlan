@@ -34,7 +34,7 @@ const Header = () => {
           > 
           </Nav>
           <div className='pe-5 header-btn-container'>
-            <Button className='mx-2 doyacad'>Doyenify Academy</Button>
+            <Button className='mx-2 doyacad'  href="https://academy.doyenify.com/">Doyenify Academy</Button>
             <Makeenquiry/>
             <Bookaservice/>
             {/* <Button className='mx-2'  style={{backgroundColor: "#044163"}}>Make An Enquiry</Button> */}
