@@ -13,8 +13,12 @@
     
     all: unset;
     margin-top: 20px;
-    padding-Left: 300px;
    
+   
+}
+
+.shiftme {
+    padding-Left: 300px;
 }
 
 .text-width{
@@ -152,7 +156,11 @@
     
     
     }
+
     
+    .shiftme {
+        all: unset;
+    }
     
 } 
 
