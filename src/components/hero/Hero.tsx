@@ -9,7 +9,7 @@ const Hero = () => {
       <Carousel >
               <Carousel.Item >
               <div className = "cardcon"  >
-                <img src="./img/hero.png" alt="...">
+                <img src="./img/hero.png" className="cimg" alt="...">
 
                 </img>
                   <div className="shiftme">
