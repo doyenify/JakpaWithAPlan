@@ -1,4 +1,40 @@
+.cardcon {
+    height: 495px
+}
 
+.cimg {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position:50% 50%;
+}
+
+.carousel-div {
+    
+    all: unset;
+    margin-top: 20px;
+    padding-Left: 300px;
+   
+}
+
+.text-width{
+    width: 900px;
+    font-size: 2.5rem;
+    
+}
+
+.text-width2{
+    width: 900px;
+    font-size: 2.1rem;
+    
+}
+
+.doyenifyacd-text{
+    font-size: 2.5rem;
+    font-Weight: 700;
+    color: #34db58;
+    
+}
 
 .hero-about-btn:hover{
     border-color: aliceblue;
@@ -9,6 +45,28 @@
     border-color: aliceblue;
     background-color: #8CACD2;
 }
+
+.doyenifyacd-about-btn {
+    background-color: #387846; 
+    border-color: #c5eccd
+}
+
+.doyenifyacd-offer-btn {
+    background-color: transparent; 
+    border-color: #c5eccd
+}
+
+.doyenifyacd-about-btn:hover{
+    border-color: rgb(126, 199, 150);
+    background-color: #56aa67;
+}
+
+.doyenifyacd-offer-btn:hover{
+    border-color: aliceblue;
+    background-color: #88ac8f;
+}
+
+
 
 
 @media screen and (max-width: 640px) {
@@ -21,17 +79,82 @@
         display: block;
      
     }
+    
     .hero-about-btn{
-    margin-bottom: 20px ;
-    margin-left: 5px;
-    width: 80%;
-
-
+        margin-bottom: 20px ;
+        margin-left: 5px;
+        width: 80%;
+    
+    
     }
+
     .hero-offer-btn{
     padding-left: 0px;
     margin-left: 0px;
     background-color: #044163;
     }
-  
+
+
+    .doyenifyacd-about-btn{
+        margin-bottom: 20px ;
+        margin-left: 5px;
+        width: 80%;
+    
+    
+    }
+
+   
 }
+
+
+@media (min-width: 100px) and (max-width: 567px){
+ 
+    .cardcon {
+        height: 710px;
+    }
+    
+    .carousel-div {
+        all: unset;
+        margin-top: 150px;
+       
+    }
+    
+    .text-width{
+        all: unset;
+        
+        font-size: 1.5rem;
+        width: 300px;
+        font-weight: 600;
+        
+    }
+    
+    .text-width2{
+        all: unset;
+        
+        font-size: 1.5rem;
+        width: 300px;
+        font-weight: 600;
+        
+    }
+
+    .hero-about-btn{
+        margin-bottom: 20px ;
+        margin-left: 5px;
+        width: 60%;
+    
+    
+        }
+
+    .doyenifyacd-about-btn{
+        margin-bottom: 20px ;
+        margin-left: 5px;
+        width: 60%;
+    
+    
+    }
+    
+    
+} 
+
+
+  
