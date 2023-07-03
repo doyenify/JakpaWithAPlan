@@ -67,7 +67,7 @@ const Hero = () => {
                       <br /> You don't have to be great to start, <br />but you have to start to be great - zig Ziglar.
                       </Card.Title>
                         <div className='mt-3 hero-btn'>
-                            <Button  className='doyenifyacd-about-btn  px-5 ' href='#aboutuspage' >Doyenify Academy</Button>
+                            <Button  className='doyenifyacd-about-btn  px-5 ' href='https://academy.doyenify.com/' >Doyenify Academy</Button>
                             <Button  className='doyenifyacd-offer-btn mx-2 px-5' href='#whatweoffer' >What We Offer</Button>
                           </div>
                       
