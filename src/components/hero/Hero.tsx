@@ -78,7 +78,161 @@ const Hero = () => {
                   </div>
                 </div>
               </Carousel.Item>
+
+
+
+              {/* extra1 */}
+              <Carousel.Item >
+              <div className = "cardcon"  >
+                <img src="./img/carousel1.png" className="cimg" alt="...">
+
+                </img>
+                  <div className="shiftme">
+                    <Carousel.Caption className='caption carousel-div'>
+                      <br/>
+                      <br/>
+                      <div className='hero-card-container '>
+                      <Card className="bg-transparent  bg-dark text-white " style={{padding: "0", borderColor: "#ffffff00"}}>
+                      <div className="doyenifyacd-text" >Services1</div>
+                      <Card.Title className="hero-title text-width2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                      <br/>Tempore, eius, ab, molestiae praesentium hic quia quaerat culpa quas consectetur <br/>
+                      dolor veritatis vel voluptas minus laborum minima quis dolorum necessitatibus tempora.
+                      </Card.Title>
+                        {/* <div className='mt-3 hero-btn'>
+                            <Button  className='doyenifyacd-about-btn  px-5 ' href='https://academy.doyenify.com/' >Doyenify Academy</Button>
+                            <Button  className='doyenifyacd-offer-btn mx-2 px-5' href='#whatweoffer' >What We Offer</Button>
+                          </div> */}
+                      
+                    </Card>
+                    </div>
+                      
+                    </Carousel.Caption>
+                  </div>
+                </div>
+              </Carousel.Item>
+
+
+              {/* extra2 */}
+              <Carousel.Item >
+              <div className = "cardcon"  >
+                <img src="./img/carousel2.png" className="cimg" alt="...">
+
+                </img>
+                  <div className="shiftme">
+                    <Carousel.Caption className='caption carousel-div'>
+                      <br/>
+                      <br/>
+                      <div className='hero-card-container '>
+                      <Card className="bg-transparent  bg-dark text-white " style={{padding: "0", borderColor: "#ffffff00"}}>
+                      <div className="doyenifyacd-text" >Services2</div>
+                      <Card.Title className="hero-title text-width2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                      <br/>Tempore, eius, ab, molestiae praesentium hic quia quaerat culpa quas consectetur <br/>
+                      dolor veritatis vel voluptas minus laborum minima quis dolorum necessitatibus tempora.
+                      </Card.Title>
+                        {/* <div className='mt-3 hero-btn'>
+                            <Button  className='doyenifyacd-about-btn  px-5 ' href='https://academy.doyenify.com/' >Doyenify Academy</Button>
+                            <Button  className='doyenifyacd-offer-btn mx-2 px-5' href='#whatweoffer' >What We Offer</Button>
+                          </div> */}
+                      
+                    </Card>
+                    </div>
+                      
+                    </Carousel.Caption>
+                  </div>
+                </div>
+              </Carousel.Item>
               
+
+              {/* extra3 */}
+              <Carousel.Item >
+              <div className = "cardcon"  >
+                <img src="./img/carousel3.png" className="cimg" alt="...">
+
+                </img>
+                  <div className="shiftme">
+                    <Carousel.Caption className='caption carousel-div'>
+                      <br/>
+                      <br/>
+                      <div className='hero-card-container '>
+                      <Card className="bg-transparent  bg-dark text-white " style={{padding: "0", borderColor: "#ffffff00"}}>
+                      <div className="doyenifyacd-text" >Services3</div>
+                      <Card.Title className="hero-title text-width2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                      <br/>Tempore, eius, ab, molestiae praesentium hic quia quaerat culpa quas consectetur <br/>
+                      dolor veritatis vel voluptas minus laborum minima quis dolorum necessitatibus tempora.
+                      </Card.Title>
+                        {/* <div className='mt-3 hero-btn'>
+                            <Button  className='doyenifyacd-about-btn  px-5 ' href='https://academy.doyenify.com/' >Doyenify Academy</Button>
+                            <Button  className='doyenifyacd-offer-btn mx-2 px-5' href='#whatweoffer' >What We Offer</Button>
+                          </div> */}
+                      
+                    </Card>
+                    </div>
+                      
+                    </Carousel.Caption>
+                  </div>
+                </div>
+              </Carousel.Item>
+
+               {/* extra4 */}
+               <Carousel.Item >
+              <div className = "cardcon"  >
+                <img src="./img/carousel1.png" className="cimg" alt="...">
+
+                </img>
+                  <div className="shiftme">
+                    <Carousel.Caption className='caption carousel-div'>
+                      <br/>
+                      <br/>
+                      <div className='hero-card-container '>
+                      <Card className="bg-transparent  bg-dark text-white " style={{padding: "0", borderColor: "#ffffff00"}}>
+                      <div className="doyenifyacd-text" >Services4</div>
+                      <Card.Title className="hero-title text-width2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                      <br/>Tempore, eius, ab, molestiae praesentium hic quia quaerat culpa quas consectetur <br/>
+                      dolor veritatis vel voluptas minus laborum minima quis dolorum necessitatibus tempora.
+                      </Card.Title>
+                        {/* <div className='mt-3 hero-btn'>
+                            <Button  className='doyenifyacd-about-btn  px-5 ' href='https://academy.doyenify.com/' >Doyenify Academy</Button>
+                            <Button  className='doyenifyacd-offer-btn mx-2 px-5' href='#whatweoffer' >What We Offer</Button>
+                          </div> */}
+                      
+                    </Card>
+                    </div>
+                      
+                    </Carousel.Caption>
+                  </div>
+                </div>
+              </Carousel.Item>
+              
+
+              {/* extra5 */}
+              <Carousel.Item >
+              <div className = "cardcon"  >
+                <img src="./img/carousel3.png" className="cimg" alt="...">
+
+                </img>
+                  <div className="shiftme">
+                    <Carousel.Caption className='caption carousel-div'>
+                      <br/>
+                      <br/>
+                      <div className='hero-card-container '>
+                      <Card className="bg-transparent  bg-dark text-white " style={{padding: "0", borderColor: "#ffffff00"}}>
+                      <div className="doyenifyacd-text" >Services5</div>
+                      <Card.Title className="hero-title text-width2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                      <br/>Tempore, eius, ab, molestiae praesentium hic quia quaerat culpa quas consectetur <br/>
+                      dolor veritatis vel voluptas minus laborum minima quis dolorum necessitatibus tempora.
+                      </Card.Title>
+                        {/* <div className='mt-3 hero-btn'>
+                            <Button  className='doyenifyacd-about-btn  px-5 ' href='https://academy.doyenify.com/' >Doyenify Academy</Button>
+                            <Button  className='doyenifyacd-offer-btn mx-2 px-5' href='#whatweoffer' >What We Offer</Button>
+                          </div> */}
+                      
+                    </Card>
+                    </div>
+                      
+                    </Carousel.Caption>
+                  </div>
+                </div>
+              </Carousel.Item>
               
           </Carousel>
      
