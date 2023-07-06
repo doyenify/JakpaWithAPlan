@@ -11,17 +11,17 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const validationSchema = Yup.object().shape({
-  fullname: Yup.string().required("Required"),
-  email: Yup.string().email("Invalid email").required("Required"),
-  phone: Yup.number().required("Required"),
-  service: Yup.string().required("Required"),
-  // course: Yup.string().required("Required"),
-  // country: Yup.string().required("Required"),
-  //description: Yup.string().required("Required"),
+  Fullname: Yup.string().required("Required"),
+  Email: Yup.string().email("Invalid Email").required("Required"),
+  Phone: Yup.number().required("Required"),
+  Service: Yup.string().required("Required"),
+  // Course: Yup.string().required("Required"),
+  // Country: Yup.string().required("Required"),
+  //Description: Yup.string().required("Required"),
 });
 
 
-function Bookaservice() {
+function BookaService() {
 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -39,16 +39,16 @@ function Bookaservice() {
     { label: "Hands-on experience", value: "Hands-on Experience" },
 
   ];
-  const courseList = ["--Course List--", "HTML", "CSS", "JavaScript", "Web Development", "Frameworks (React, Angular, or Vue)", "Excel", "Business Analysis", "Business Intelligence", "Programming", "Cyber Security", "Digital Marketing", "Data Analysis", "Statistics",
+  const CourseList = ["--Course List--", "HTML", "CSS", "JavaScript", "Web Development", "Frameworks (React, Angular, or Vue)", "Excel", "Business Analysis", "Business Intelligence", "Programming", "Cyber Security", "Digital Marketing", "Data Analysis", "Statistics",
                       "Data Visualization", "Product Design", "Graphics", "Video Editing", "Front End Development", "Back End Development", "Data Base", "Leadership" ]
-  const countryList = [ "--Choose Country--","Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","Antigua &amp; Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia &amp; Herzegovina","Botswana","Brazil","British Virgin Islands","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Cape Verde","Cayman Islands","Chad","Chile","China","Colombia","Congo","Cook Islands","Costa Rica","Cote D Ivoire","Croatia","Cruise Ship","Cuba","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Estonia","Ethiopia","Falkland Islands","Faroe Islands","Fiji","Finland","France","French Polynesia","French West Indies","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar","Greece","Greenland","Grenada","Guam","Guatemala","Guernsey","Guinea","Guinea Bissau","Guyana","Haiti","Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Isle of Man","Israel","Italy","Jamaica","Japan","Jersey","Jordan","Kazakhstan","Kenya","Kuwait","Kyrgyz Republic","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macau","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Mauritania","Mauritius","Mexico","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Namibia","Nepal","Netherlands","Netherlands Antilles","New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","Norway","Oman","Pakistan","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Puerto Rico","Qatar","Reunion","Romania","Russia","Rwanda","Saint Pierre &amp; Miquelon","Samoa","San Marino","Satellite","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","South Africa","South Korea","Spain","Sri Lanka","St Kitts &amp; Nevis","St Lucia","St Vincent","St. Lucia","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor L'Este","Togo","Tonga","Trinidad &amp; Tobago","Tunisia","Turkey","Turkmenistan","Turks &amp; Caicos","Uganda","Ukraine","United Arab Emirates","United Kingdom","Uruguay","Uzbekistan","Venezuela","Vietnam","Virgin Islands (US)","Yemen","Zambia","Zimbabwe"];
-  const courseRef = useRef<HTMLDivElement | null>(null);
-  //const serviceRef = useRef<HTMLSelectElement | null>(null) 
+  const CountryList = [ "--Choose Country--","Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","Antigua &amp; Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia &amp; Herzegovina","Botswana","Brazil","British Virgin Islands","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Cape Verde","Cayman Islands","Chad","Chile","China","Colombia","Congo","Cook Islands","Costa Rica","Cote D Ivoire","Croatia","Cruise Ship","Cuba","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Estonia","Ethiopia","Falkland Islands","Faroe Islands","Fiji","Finland","France","French Polynesia","French West Indies","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar","Greece","Greenland","Grenada","Guam","Guatemala","Guernsey","Guinea","Guinea Bissau","Guyana","Haiti","Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Isle of Man","Israel","Italy","Jamaica","Japan","Jersey","Jordan","Kazakhstan","Kenya","Kuwait","Kyrgyz Republic","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macau","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Mauritania","Mauritius","Mexico","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Namibia","Nepal","Netherlands","Netherlands Antilles","New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","Norway","Oman","Pakistan","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Puerto Rico","Qatar","Reunion","Romania","Russia","Rwanda","Saint Pierre &amp; Miquelon","Samoa","San Marino","Satellite","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","South Africa","South Korea","Spain","Sri Lanka","St Kitts &amp; Nevis","St Lucia","St Vincent","St. Lucia","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor L'Este","Togo","Tonga","Trinidad &amp; Tobago","Tunisia","Turkey","Turkmenistan","Turks &amp; Caicos","Uganda","Ukraine","United Arab Emirates","United Kingdom","Uruguay","Uzbekistan","Venezuela","Vietnam","Virgin Islands (US)","Yemen","Zambia","Zimbabwe"];
+  const CourseRef = useRef<HTMLDivElement | null>(null);
+  //const ServiceRef = useRef<HTMLSelectElement | null>(null) 
   
   
   return (
     <>
-      <Button className='bookaservice-btn mx-2' style={{backgroundColor: "#044163"}} onClick={handleShow}>
+      <Button className='bookaService-btn mx-2' style={{backgroundColor: "#044163"}} onClick={handleShow}>
         Book A Service
       </Button>
 
@@ -59,16 +59,16 @@ function Bookaservice() {
            <Modal.Body>
             <Formik
                   initialValues={{
-                    fullname: "",
-                    email: "",
-                    phone: "",
-                    service: "",
-                    course: "",
-                    country: "",
-                    description: ""
+                    Fullname: "",
+                    Email: "",
+                    Phone: "",
+                    Service: "",
+                    Course: "",
+                    Country: "",
+                    Description: ""
                   }}
                   onSubmit={(values, { setSubmitting, resetForm }) => {
-                    axios.post('https://sheet.best/api/sheets/bcc423df-7dec-42dd-89fe-b76690e9d465', values)
+                    axios.post('https://us-central1-doyenifypanelapi.cloudfunctions.net/app/bookings', values)
                     .then(response => {
                       console.log('loggin in', response);
                       setSubmitting(false);
@@ -104,14 +104,14 @@ function Bookaservice() {
                   <Form.Control
                     className="contact-input"
                     type="text"
-                    name="fullname"
-                    value={values.fullname}
+                    name="Fullname"
+                    value={values.Fullname}
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    isInvalid={!!errors.fullname}
+                    isInvalid={!!errors.Fullname}
                   />
                   <Form.Control.Feedback type="invalid">
-                  {errors.fullname}
+                  {errors.Fullname}
                   </Form.Control.Feedback>
                 </Form.Group> 
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -119,14 +119,14 @@ function Bookaservice() {
                   <Form.Control
                     className="contact-input"
                     type="text"
-                    name="email"
-                    value={values.email}
+                    name="Email"
+                    value={values.Email}
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    isInvalid={!!errors.email}
+                    isInvalid={!!errors.Email}
                   />
                   <Form.Control.Feedback type="invalid">
-                  {errors.email}
+                  {errors.Email}
                   </Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -136,20 +136,20 @@ function Bookaservice() {
                     autoFocus
                     className="contact-input"
                     type="text"
-                    name="phone"
-                    value={values.phone}
+                    name="Phone"
+                    value={values.Phone}
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    isInvalid={!!errors.phone}
+                    isInvalid={!!errors.Phone}
                   />
                   <Form.Control.Feedback type="invalid">
-                  {errors.phone}
+                  {errors.Phone}
                   </Form.Control.Feedback>
                 </Form.Group>
 
-                <Form.Group controlId="service">
+                <Form.Group controlId="Service">
                   <Form.Label>Service</Form.Label>
-                  <Field className="service-field" name="service" as={Form.Control} component="select">
+                  <Field className="Service-field" name="Service" as={Form.Control} component="select">
                     {options.map((option) => (
                       <option value={option.value} key={option.value}>
                         {option.label}
@@ -157,43 +157,43 @@ function Bookaservice() {
                     ))}
                   </Field>                  
                   <Form.Control.Feedback type="invalid">
-                   {errors.service}
+                   {errors.Service}
                   </Form.Control.Feedback>
                 </Form.Group>
                 
-                {values.service === 'Crash Course and Certification' && (
-                  <Form.Group controlId='course' ref={courseRef}>
+                {values.Service === 'Crash Course and Certification' && (
+                  <Form.Group controlId='Course' ref={CourseRef}>
                   <Form.Label>Course</Form.Label>
-                  <Field className="service-field" name="course" as={Form.Control} component="select">
-                    {courseList.map((course) => (
-                      <option value={course} key={course} >
-                        {course}
+                  <Field className="Service-field" name="Course" as={Form.Control} component="select">
+                    {CourseList.map((Course) => (
+                      <option value={Course} key={Course} >
+                        {Course}
                       </option>
                     ))}
                   </Field>
                   <Form.Control.Feedback>
-                    {errors.course}
+                    {errors.Course}
                   </Form.Control.Feedback>
                 </Form.Group>
                 )}
                 
-                {values.service === 'CV Review' && (
-                  <Form.Group controlId='country'>
+                {values.Service === 'CV Review' && (
+                  <Form.Group controlId='Country'>
                   <Form.Label>Country</Form.Label>
-                  <Field className="service-field" name="country" as={Form.Control} component="select">
-                    {countryList.map((country) => (
-                      <option value={country} key={country}>
-                        {country}
+                  <Field className="Service-field" name="Country" as={Form.Control} component="select">
+                    {CountryList.map((Country) => (
+                      <option value={Country} key={Country}>
+                        {Country}
                       </option>
                     ))}
                   </Field>
                   <Form.Control.Feedback>
-                    {errors.country}
+                    {errors.Country}
                   </Form.Control.Feedback>
                 </Form.Group>
                 )}
 
-                {(values.service === 'Consultancy' || values.service === 'Hands-on Experience') && (
+                {(values.Service === 'Consultancy' || values.Service === 'Hands-on Experience') && (
                   <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                   <Form.Label>Description</Form.Label>
                   <Form.Control
@@ -202,19 +202,19 @@ function Bookaservice() {
                     rows={5}
                     className="contact-input"
                     type="text"
-                    name="description"
-                    value={values.description}
+                    name="Description"
+                    value={values.Description}
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    isInvalid={!!errors.description}
+                    isInvalid={!!errors.Description}
                   />
                   <Form.Control.Feedback type="invalid">
-                  {errors.description}
+                  {errors.Description}
                   </Form.Control.Feedback>  
                 </Form.Group>
                 )}
 
-              {values.service === 'Consultancy' && (
+              {values.Service === 'Consultancy' && (
                 <div ref={rootElementRef}>
                 <PopupButton
                   url="https://calendly.com/jakpawithaplan/30min"
@@ -255,4 +255,4 @@ function Bookaservice() {
   );
 }
 
-export default Bookaservice;
+export default BookaService;
