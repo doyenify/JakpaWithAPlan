@@ -17,7 +17,7 @@ const CourseTable:React.FC<CourseTableProps> = (props: CourseTableProps) => {
                 <td>{props.courseList}</td>
                 <td>{props.date}</td>
                 <td>{props.duration}</td>
-                <td><CourseForm buttonText="More Info"/></td>
+                <td><a className="btn btn-primary"  style={{backgroundColor: "#044163"}} href="https://academy.doyenify.com/">More Info</a></td>
                 <td><CourseForm buttonText="Register"/></td>
             </tr>
     )
