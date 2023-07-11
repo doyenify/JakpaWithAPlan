@@ -179,7 +179,7 @@ const CourseForm: React.FC<buttonTextProps> = ({ buttonText }) => {
                     type="submit"
                   >
                     Register
-                    <ToastContainer />
+                    {/* <ToastContainer /> */}
                   </Button>
 
                   <p
