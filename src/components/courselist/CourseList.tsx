@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
-import { Table } from 'react-bootstrap';
-import './courselist.css';
-import CourseTable, { CourseTableProps } from '../CourseTable';
-
-
+import React, { useState, useEffect } from "react";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import { Table } from "react-bootstrap";
+import "./courselist.css";
+import CourseTable, { CourseTableProps } from "../CourseTable";
 
 function CourseList() {
   const [show, setShow] = useState(false);
@@ -13,32 +11,44 @@ function CourseList() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const [data, setData] = useState<CourseTableProps[]>([]);
-  
+
   const getData = async () => {
     try {
-        const res = await fetch("https://sheet.best/api/sheets/06e52649-1db7-4e7d-898d-e817d2df4bcb")
-        const jsonData = await res.json()
-        setData(jsonData)
+      const res = await fetch(
+        "https://us-central1-doyenifypanelapi.cloudfunctions.net/app/courses"
+      );
+      const jsonData = await res.json();
+      setData(jsonData);
+
+      console.log(jsonData);
     } catch (error) {
-        console.log(error)
+      console.log(error);
     }
-}
-useEffect(() => {
-    getData()
-}, [])
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
 
   return (
     <>
-      <Button className='courselist-btn mx-2 Px-5 '  style={{backgroundColor: "#044163"}} onClick={handleShow}>
+      <Button
+        className="courselist-btn mx-2 Px-5 "
+        style={{ backgroundColor: "#044163" }}
+        onClick={handleShow}
+      >
         Course List
       </Button>
 
-      <Modal  show={show} onHide={handleClose} size="lg">
+      <Modal show={show} onHide={handleClose} size="lg">
         <Modal.Header closeButton>
-          <Modal.Title className='text-center'> Our Range of Courses</Modal.Title>
+          <Modal.Title className="text-center">
+            {" "}
+            Our Range of Courses
+          </Modal.Title>
         </Modal.Header>
-        <Modal.Body style={{fontSize: "14px"}}>
-        <Table striped bordered hover variant="dark">
+        <Modal.Body style={{ fontSize: "14px" }}>
+          <Table striped bordered hover variant="dark">
             <thead>
               <tr>
                 <th>#</th>
@@ -51,21 +61,21 @@ useEffect(() => {
             </thead>
             <tbody>
               {data.length > 0 ? (
-                (data?.map((item) => (
+                data?.map((item: any, key: number) => (
                   <CourseTable
                     key={item.id}
-                    id={item.id}
-                    courseList={item.courseList}
-                    date={item.date}
-                    duration={item.duration}
-                    feeNaira={item.feeNaira}
+                    id={key}
+                    courseList={item.CourseName}
+                    date={item.Cohort}
+                    duration={item.Duration}
+                    feeNaira={item.Price}
                   />
-                )))
+                ))
               ) : (
                 <tr>
                   <td>No data available</td>
-                </tr>)}
-              
+                </tr>
+              )}
             </tbody>
           </Table>
         </Modal.Body>
